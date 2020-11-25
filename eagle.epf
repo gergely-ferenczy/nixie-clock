@@ -6,12 +6,15 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:24996481"
 UsedLibrary="D:/Work/Eagle/Libraries/Capacitors.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Connectors.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Diodes.lbr"
-UsedLibrary="D:/Work/Eagle/Libraries/Nixie.lbr"
+UsedLibrary="D:/Work/Eagle/Libraries/ICs.lbr"
+UsedLibrary="D:/Work/Eagle/Libraries/Misc.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Resistors.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Supplies.lbr"
+UsedLibrary="D:/Work/Eagle/Libraries/Harwin - S8421-45R.lbr"
 
 [Win_1]
 Type="Control Panel"

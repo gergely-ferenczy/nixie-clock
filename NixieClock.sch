@@ -251,7 +251,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="Nixie">
+<library name="ICs">
 <packages>
 <package name="SOP65P640X120-16N" urn="urn:adsk.eagle:footprint:24918270/1">
 <description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.50 X 1.20 mm body
@@ -397,23 +397,6 @@
 <smd name="64" x="-3.75" y="5.6783" dx="1.5588" dy="0.28" layer="1" rot="R90"/>
 <text x="0" y="7.0927" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-7.0927" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="NIXIE-IN-8-2">
-<pad name="12" x="2.3234375" y="4.427371875" drill="0.6"/>
-<pad name="11" x="4.1146875" y="2.840653125" drill="0.6"/>
-<pad name="10" x="4.96346875" y="0.60328125" drill="0.6"/>
-<pad name="9" x="4.675365625" y="-1.77226875" drill="0.6"/>
-<pad name="8" x="3.316365625" y="-3.741884375" drill="0.6"/>
-<pad name="7" x="1.19775" y="-4.85441875" drill="0.6"/>
-<pad name="6" x="-1.195209375" y="-4.85504375" drill="0.6"/>
-<pad name="5" x="-3.31440625" y="-3.743621875" drill="0.6"/>
-<pad name="4" x="-4.6744375" y="-1.77471875" drill="0.6"/>
-<pad name="3" x="-4.963784375" y="0.60068125" drill="0.6"/>
-<pad name="2" x="-4.116175" y="2.8385" drill="0.6"/>
-<pad name="1" x="-2.325753125" y="4.42615625" drill="0.6"/>
-<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="22"/>
-<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="21"/>
-<circle x="0" y="0" radius="9.5" width="0.127" layer="22"/>
 </package>
 </packages>
 <packages3d>
@@ -562,29 +545,6 @@
 <text x="-20.32" y="59.69" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
 <text x="-20.32" y="-60.96" size="1.778" layer="96" ratio="6" rot="SR0">&gt;VALUE</text>
 <text x="-20.32" y="-63.5" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
-</symbol>
-<symbol name="NIXIE-IN-8-2">
-<pin name="K1" x="-10.16" y="10.16" length="short"/>
-<pin name="K2" x="-10.16" y="7.62" length="short"/>
-<pin name="K3" x="-10.16" y="5.08" length="short"/>
-<pin name="K4" x="-10.16" y="2.54" length="short"/>
-<pin name="K5" x="-10.16" y="0" length="short"/>
-<pin name="K6" x="-10.16" y="-2.54" length="short"/>
-<pin name="K7" x="-10.16" y="-5.08" length="short"/>
-<pin name="K8" x="-10.16" y="-7.62" length="short"/>
-<pin name="K9" x="-10.16" y="-10.16" length="short"/>
-<pin name="KD" x="-10.16" y="-12.7" length="short"/>
-<pin name="K0" x="-10.16" y="12.7" length="short"/>
-<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
-<pin name="A" x="10.16" y="0" length="short" rot="R180"/>
-<wire x1="0" y1="0" x2="3.81" y2="0" width="0.3048" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.8128" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.8128" layer="94"/>
-<text x="-7.62" y="16.51" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -742,32 +702,6 @@
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
 <attribute name="PACKAGE" value="LQFP-64" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NIXIE-IN-8-2" prefix="Q">
-<gates>
-<gate name="A" symbol="NIXIE-IN-8-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="NIXIE-IN-8-2">
-<connects>
-<connect gate="A" pin="A" pad="12"/>
-<connect gate="A" pin="K0" pad="11"/>
-<connect gate="A" pin="K1" pad="1"/>
-<connect gate="A" pin="K2" pad="2"/>
-<connect gate="A" pin="K3" pad="3"/>
-<connect gate="A" pin="K4" pad="4"/>
-<connect gate="A" pin="K5" pad="5"/>
-<connect gate="A" pin="K6" pad="6"/>
-<connect gate="A" pin="K7" pad="7"/>
-<connect gate="A" pin="K8" pad="9"/>
-<connect gate="A" pin="K9" pad="10"/>
-<connect gate="A" pin="KD" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1115,6 +1049,156 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="Misc">
+<packages>
+<package name="NIXIE-IN-8-2">
+<pad name="12" x="2.3234375" y="4.427371875" drill="0.6"/>
+<pad name="11" x="4.1146875" y="2.840653125" drill="0.6"/>
+<pad name="10" x="4.96346875" y="0.60328125" drill="0.6"/>
+<pad name="9" x="4.675365625" y="-1.77226875" drill="0.6"/>
+<pad name="8" x="3.316365625" y="-3.741884375" drill="0.6"/>
+<pad name="7" x="1.19775" y="-4.85441875" drill="0.6"/>
+<pad name="6" x="-1.195209375" y="-4.85504375" drill="0.6"/>
+<pad name="5" x="-3.31440625" y="-3.743621875" drill="0.6"/>
+<pad name="4" x="-4.6744375" y="-1.77471875" drill="0.6"/>
+<pad name="3" x="-4.963784375" y="0.60068125" drill="0.6"/>
+<pad name="2" x="-4.116175" y="2.8385" drill="0.6"/>
+<pad name="1" x="-2.325753125" y="4.42615625" drill="0.6"/>
+<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="22"/>
+<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="21"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="22"/>
+</package>
+<package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/1">
+<description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
+<wire x1="-8" y1="12" x2="-6" y2="12" width="0.15" layer="21"/>
+<wire x1="-8" y1="-12" x2="-6" y2="-12" width="0.15" layer="21"/>
+<wire x1="6" y1="-12" x2="8" y2="-12" width="0.15" layer="21"/>
+<wire x1="-8" y1="-14.5" x2="-8" y2="12" width="0.1" layer="41"/>
+<wire x1="-8" y1="12" x2="8" y2="12" width="0.1" layer="41"/>
+<wire x1="8" y1="12" x2="8" y2="-14.5" width="0.1" layer="41"/>
+<wire x1="8" y1="-14.5" x2="-8" y2="-14.5" width="0.1" layer="41"/>
+<wire x1="-0.5" y1="-15.325" x2="0.5" y2="-15.325" width="0.15" layer="21"/>
+<wire x1="0" y1="-14.825" x2="0" y2="-15.825" width="0.15" layer="21"/>
+<wire x1="-8" y1="-14.5" x2="8" y2="-14.5" width="0.127" layer="4"/>
+<wire x1="8" y1="-14.5" x2="8" y2="12" width="0.127" layer="4"/>
+<wire x1="8" y1="12" x2="-8" y2="12" width="0.127" layer="4"/>
+<wire x1="-8" y1="12" x2="-8" y2="-14.5" width="0.127" layer="4"/>
+<wire x1="-8" y1="12" x2="-8" y2="10" width="0.15" layer="21"/>
+<wire x1="-8" y1="-12" x2="-8" y2="-10" width="0.15" layer="21"/>
+<wire x1="8" y1="-12" x2="8" y2="-10" width="0.15" layer="21"/>
+<wire x1="8" y1="12" x2="6" y2="12" width="0.15" layer="21"/>
+<wire x1="8" y1="12" x2="8" y2="10" width="0.15" layer="21"/>
+<wire x1="-8" y1="12" x2="-8" y2="-12" width="0.15" layer="51"/>
+<wire x1="-8" y1="-12" x2="8" y2="-12" width="0.15" layer="51"/>
+<wire x1="8" y1="-12" x2="8" y2="12" width="0.15" layer="51"/>
+<wire x1="8" y1="12" x2="-8" y2="12" width="0.15" layer="51"/>
+<text x="-8" y="12.5" size="1" layer="25">&gt;NAME</text>
+<text x="-8" y="-17" size="1" layer="27">&gt;VALUE</text>
+<smd name="1" x="0" y="8.5" dx="2.6" dy="3" layer="1"/>
+<smd name="2" x="0" y="-12.9" dx="3.6" dy="3" layer="1"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="4"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="S8421-45R" urn="urn:adsk.eagle:package:24998728/2" type="model">
+<description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
+<packageinstances>
+<packageinstance name="S8421-45R"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="NIXIE-IN-8-2">
+<pin name="K1" x="-10.16" y="10.16" length="short"/>
+<pin name="K2" x="-10.16" y="7.62" length="short"/>
+<pin name="K3" x="-10.16" y="5.08" length="short"/>
+<pin name="K4" x="-10.16" y="2.54" length="short"/>
+<pin name="K5" x="-10.16" y="0" length="short"/>
+<pin name="K6" x="-10.16" y="-2.54" length="short"/>
+<pin name="K7" x="-10.16" y="-5.08" length="short"/>
+<pin name="K8" x="-10.16" y="-7.62" length="short"/>
+<pin name="K9" x="-10.16" y="-10.16" length="short"/>
+<pin name="KD" x="-10.16" y="-12.7" length="short"/>
+<pin name="K0" x="-10.16" y="12.7" length="short"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="A" x="10.16" y="0" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="3.81" y2="0" width="0.3048" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.8128" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.8128" layer="94"/>
+<text x="-7.62" y="16.51" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="S8421-45R">
+<description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.508" layer="94"/>
+<wire x1="1.27" y1="1.016" x2="-1.27" y2="1.016" width="0.508" layer="94"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.508" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.27" y2="-2.54" width="0.508" layer="94"/>
+<text x="2.54" y="4.572" size="2.54" layer="94" rot="R270">+</text>
+<text x="3.81" y="-5.08" size="2.54" layer="94" rot="R180">-</text>
+<text x="5.08" y="1.27" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-1.27" size="1.27" layer="95">&gt;VALUE</text>
+<pin name="ANODE" x="0" y="7.62" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="CATHODE" x="0" y="-7.62" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NIXIE-IN-8-2" prefix="V">
+<gates>
+<gate name="A" symbol="NIXIE-IN-8-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NIXIE-IN-8-2">
+<connects>
+<connect gate="A" pin="A" pad="12"/>
+<connect gate="A" pin="K0" pad="11"/>
+<connect gate="A" pin="K1" pad="1"/>
+<connect gate="A" pin="K2" pad="2"/>
+<connect gate="A" pin="K3" pad="3"/>
+<connect gate="A" pin="K4" pad="4"/>
+<connect gate="A" pin="K5" pad="5"/>
+<connect gate="A" pin="K6" pad="6"/>
+<connect gate="A" pin="K7" pad="7"/>
+<connect gate="A" pin="K8" pad="9"/>
+<connect gate="A" pin="K9" pad="10"/>
+<connect gate="A" pin="KD" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S8421-45R" prefix="PS">
+<description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
+<gates>
+<gate name="A" symbol="S8421-45R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S8421-45R">
+<connects>
+<connect gate="A" pin="ANODE" pad="2"/>
+<connect gate="A" pin="CATHODE" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24998728/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Harwin" constant="no"/>
+<attribute name="PARAMETER" value="" constant="no"/>
+<attribute name="PARTNUMBER" value="S8421-45R" constant="no"/>
+<attribute name="VALUE" value="S8421-45R" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1125,19 +1209,19 @@
 </class>
 </classes>
 <parts>
-<part name="IC1" library="Nixie" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC2" library="Nixie" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC3" library="Nixie" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC4" library="Nixie" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC5" library="Nixie" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC6" library="Nixie" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC7" library="Nixie" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC8" library="Nixie" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="IC1" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC2" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC3" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC4" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC5" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="IC6" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="IC7" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="IC8" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
 <part name="C1" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:24972866/1" value="10n/50V"/>
 <part name="C2" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:24972866/1" value="10n/50V"/>
 <part name="C3" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:24972866/1" value="10n/50V"/>
 <part name="C4" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:24972866/1" value="10n/50V"/>
-<part name="U1" library="Nixie" deviceset="TM4C1231H6PMI7" device="" package3d_urn="urn:adsk.eagle:package:24923832/2"/>
+<part name="U1" library="ICs" deviceset="TM4C1231H6PMI7" device="" package3d_urn="urn:adsk.eagle:package:24923832/2"/>
 <part name="M1" library="Connectors" deviceset="JTAG-10PIN-ARM-CONN" device="" package3d_urn="urn:adsk.eagle:package:24925326/6"/>
 <part name="R1" library="Resistors" deviceset="CRCW0603100RFK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100/1%"/>
 <part name="R6" library="Resistors" deviceset="CRCW060333R0FK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="33/1%"/>
@@ -1147,12 +1231,12 @@
 <part name="R7" library="Resistors" deviceset="CRCW060333R0FK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="33/1%"/>
 <part name="R8" library="Resistors" deviceset="CRCW060333R0FK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="33/1%"/>
 <part name="R9" library="Resistors" deviceset="CRCW060333R0FK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="33/1%"/>
-<part name="Q1" library="Nixie" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q2" library="Nixie" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q3" library="Nixie" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q4" library="Nixie" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="IC9" library="Nixie" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC10" library="Nixie" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="Q1" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
+<part name="Q2" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
+<part name="Q3" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
+<part name="Q4" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
+<part name="IC9" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC10" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
 <part name="C5" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:24972866/1" value="10n/50V"/>
 <part name="S1" library="Supplies" deviceset="3V3" device=""/>
 <part name="S2" library="Supplies" deviceset="3V3" device=""/>
@@ -1193,6 +1277,8 @@
 <part name="S30" library="Supplies" deviceset="3V3" device=""/>
 <part name="S31" library="Supplies" deviceset="HV" device=""/>
 <part name="R14" library="Resistors" deviceset="CRCW060333R0FK" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="33/1%"/>
+<part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/2" value="S8421-45R"/>
+<part name="S32" library="Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1409,19 +1495,26 @@
 <instance part="S28" gate="G$1" x="-137.16" y="-66.04" smashed="yes">
 <attribute name="VALUE" x="-137.16" y="-70.612" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C6" gate="A" x="-205.74" y="17.78" smashed="yes">
-<attribute name="NAME" x="-203.2" y="18.796" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-203.2" y="17.145" size="1.016" layer="96"/>
-<attribute name="PACKAGE" x="-203.2" y="15.748" size="1.016" layer="96"/>
+<instance part="C6" gate="A" x="-236.22" y="17.78" smashed="yes">
+<attribute name="NAME" x="-233.68" y="18.796" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-233.68" y="17.145" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="-233.68" y="15.748" size="1.016" layer="96"/>
 </instance>
-<instance part="S29" gate="G$1" x="-205.74" y="12.7" smashed="yes">
-<attribute name="VALUE" x="-205.74" y="8.128" size="1.27" layer="96" align="bottom-center"/>
+<instance part="S29" gate="G$1" x="-236.22" y="12.7" smashed="yes">
+<attribute name="VALUE" x="-236.22" y="8.128" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="S30" gate="G$1" x="-205.74" y="53.34" smashed="yes">
 <attribute name="VALUE" x="-205.74" y="57.658" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="S31" gate="G$1" x="71.12" y="-137.16" smashed="yes">
 <attribute name="VALUE" x="71.12" y="-132.842" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="PS1" gate="A" x="-218.44" y="5.08" smashed="yes">
+<attribute name="NAME" x="-213.36" y="6.35" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-213.36" y="3.81" size="1.27" layer="95"/>
+</instance>
+<instance part="S32" gate="G$1" x="-218.44" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="-218.44" y="-9.652" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -2063,7 +2156,12 @@
 <segment>
 <pinref part="S29" gate="G$1" pin="GND"/>
 <pinref part="C6" gate="A" pin="2"/>
-<wire x1="-205.74" y1="12.7" x2="-205.74" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="12.7" x2="-236.22" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="S32" gate="G$1" pin="GND"/>
+<pinref part="PS1" gate="A" pin="CATHODE"/>
+<wire x1="-218.44" y1="-5.08" x2="-218.44" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
@@ -2138,8 +2236,8 @@
 <pinref part="U1" gate="A" pin="VDDC_2"/>
 <wire x1="-187.96" y1="22.86" x2="-185.42" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C6" gate="A" pin="1"/>
-<wire x1="-205.74" y1="22.86" x2="-187.96" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-205.74" y1="20.32" x2="-205.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="22.86" x2="-187.96" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="20.32" x2="-236.22" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-187.96" y="22.86"/>
 </segment>
 </net>
@@ -2379,6 +2477,14 @@
 <wire x1="58.42" y1="-137.16" x2="58.42" y2="-104.14" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="A" pin="K9"/>
 <wire x1="58.42" y1="-104.14" x2="60.96" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="PS1" gate="A" pin="ANODE"/>
+<pinref part="U1" gate="A" pin="VBAT"/>
+<wire x1="-218.44" y1="12.7" x2="-218.44" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="15.24" x2="-185.42" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
