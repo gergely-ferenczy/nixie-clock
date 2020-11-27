@@ -293,6 +293,32 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="C0603C430J5GACTU" prefix="C">
+<description>SMT Capacitor, 43p/50V, C0G/NP0, ±5%, 0603</description>
+<gates>
+<gate name="A" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC1608X80N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25020390/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="KEMET" constant="no"/>
+<attribute name="PACKAGE" value="0603" constant="no"/>
+<attribute name="PARAMETER" value="C0G/NP0, ±5%" constant="no"/>
+<attribute name="PARTNUMBER" value="C0603C430J5GACTU" constant="no"/>
+<attribute name="VALUE" value="43p/50V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="ICs">
@@ -478,6 +504,25 @@
 <text x="0" y="2.6436" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.2036" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="OSCCC320X250X100N" urn="urn:adsk.eagle:footprint:25023039/1">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
+<circle x="-2.3599" y="-0.95" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.9159" y1="0.1401" x2="-1.9159" y2="-0.1401" width="0.12" layer="21"/>
+<wire x1="1.9159" y1="0.1401" x2="1.9159" y2="-0.1401" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="1.5659" x2="0.2901" y2="1.5659" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="-1.5659" x2="0.2901" y2="-1.5659" width="0.12" layer="21"/>
+<wire x1="1.65" y1="-1.3" x2="-1.65" y2="-1.3" width="0.12" layer="51"/>
+<wire x1="-1.65" y1="-1.3" x2="-1.65" y2="1.3" width="0.12" layer="51"/>
+<wire x1="-1.65" y1="1.3" x2="1.65" y2="1.3" width="0.12" layer="51"/>
+<wire x1="1.65" y1="1.3" x2="1.65" y2="-1.3" width="0.12" layer="51"/>
+<smd name="1" x="-1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="2" x="1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="3" x="1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="4" x="-1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<text x="0" y="2.2009" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2009" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X120-16N" urn="urn:adsk.eagle:package:24918114/2" type="model">
@@ -513,6 +558,13 @@
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT95P240X110-3N"/>
+</packageinstances>
+</package3d>
+<package3d name="OSCCC320X250X100N" urn="urn:adsk.eagle:package:25022963/1" type="model">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OSCCC320X250X100N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -652,6 +704,7 @@
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
 <text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="-10.16" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
 </symbol>
 <symbol name="MCP111T-300E/TT">
 <pin name="VDD" x="-12.7" y="2.54" length="short" direction="pwr"/>
@@ -663,6 +716,20 @@
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
 <text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
+</symbol>
+<symbol name="XTAL">
+<pin name="1" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="-1.778" y2="2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-4.318" size="1.27" layer="95">&gt;VALUE</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -844,6 +911,7 @@
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="PACKAGE" value="SOT23-5" constant="no"/>
 <attribute name="PARTNUMBER" value="TPS73633DBVT" constant="no"/>
 </technology>
 </technologies>
@@ -868,7 +936,34 @@
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Microchip" constant="no"/>
+<attribute name="PACKAGE" value="SOT23" constant="no"/>
 <attribute name="PARTNUMBER" value="MCP111T-300E/TT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABM8G-16.000MHZ-18-D2Y-T" prefix="Y">
+<description>SMT Crystal, 16 MHz, SMD, 3.2mm x 2.5mm, 30 ppm, 18 pF, 20 ppm</description>
+<gates>
+<gate name="A" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSCCC320X250X100N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25022963/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
+<attribute name="PACKAGE" value="SMD-4 3.2x2.5" constant="no"/>
+<attribute name="PARAMETER" value="±20ppm " constant="no"/>
+<attribute name="PARTNUMBER" value="ABM8G-16.000MHZ-18-D2Y-T" constant="no"/>
+<attribute name="VALUE" value="16MHz" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1403,6 +1498,11 @@
 <part name="S35" library="Supplies" deviceset="GND" device=""/>
 <part name="S36" library="Supplies" deviceset="3V3" device=""/>
 <part name="S37" library="Supplies" deviceset="3V3" device=""/>
+<part name="Y1" library="ICs" deviceset="ABM8G-16.000MHZ-18-D2Y-T" device="" package3d_urn="urn:adsk.eagle:package:25022963/1" value="16MHz"/>
+<part name="C9" library="Capacitors" deviceset="C0603C430J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="43p/50V"/>
+<part name="C10" library="Capacitors" deviceset="C0603C430J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="43p/50V"/>
+<part name="S38" library="Supplies" deviceset="GND" device=""/>
+<part name="S39" library="Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2470,27 +2570,28 @@
 <instance part="S28" gate="A" x="25.4" y="-55.88" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-60.452" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C6" gate="A" x="-45.72" y="27.94" smashed="yes">
-<attribute name="NAME" x="-43.18" y="28.956" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-43.18" y="27.305" size="1.016" layer="96"/>
-<attribute name="PACKAGE" x="-43.18" y="25.908" size="1.016" layer="96"/>
+<instance part="C6" gate="A" x="-43.18" y="27.94" smashed="yes">
+<attribute name="NAME" x="-40.64" y="28.956" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-40.64" y="27.305" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="-40.64" y="25.908" size="1.016" layer="96"/>
 </instance>
-<instance part="S29" gate="A" x="-45.72" y="22.86" smashed="yes">
-<attribute name="VALUE" x="-45.72" y="18.288" size="1.27" layer="96" align="bottom-center"/>
+<instance part="S29" gate="A" x="-43.18" y="22.86" smashed="yes">
+<attribute name="VALUE" x="-43.18" y="18.288" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="S30" gate="A" x="-50.8" y="60.96" smashed="yes">
 <attribute name="VALUE" x="-50.8" y="65.278" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="PS1" gate="A" x="-78.74" y="-45.72" smashed="yes" grouprefs="COIN_CELL_BATTERY_SOCKET">
-<attribute name="NAME" x="-73.66" y="-44.45" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-73.66" y="-46.99" size="1.27" layer="95"/>
+<instance part="PS1" gate="A" x="-91.44" y="-43.18" smashed="yes" grouprefs="COIN_CELL_BATTERY_SOCKET">
+<attribute name="NAME" x="-86.36" y="-41.91" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-86.36" y="-44.45" size="1.27" layer="95"/>
 </instance>
-<instance part="S32" gate="A" x="-78.74" y="-55.88" smashed="yes" grouprefs="COIN_CELL_BATTERY_SOCKET">
-<attribute name="VALUE" x="-78.74" y="-60.452" size="1.27" layer="96" align="bottom-center"/>
+<instance part="S32" gate="A" x="-91.44" y="-53.34" smashed="yes" grouprefs="COIN_CELL_BATTERY_SOCKET">
+<attribute name="VALUE" x="-91.44" y="-57.912" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="IC11" gate="A" x="-71.12" y="50.8" smashed="yes">
 <attribute name="NAME" x="-78.74" y="56.642" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-78.74" y="43.18" size="1.778" layer="96"/>
+<attribute name="PACKAGE" x="-78.74" y="40.64" size="1.27" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="C7" gate="A" x="-55.88" y="43.18" smashed="yes">
 <attribute name="NAME" x="-53.34" y="44.196" size="1.27" layer="95"/>
@@ -2511,6 +2612,7 @@
 <instance part="IC12" gate="A" x="71.12" y="20.32" smashed="yes" grouprefs="RESET_SUPERVISOR">
 <attribute name="NAME" x="60.96" y="26.162" size="1.778" layer="95"/>
 <attribute name="VALUE" x="60.96" y="12.7" size="1.778" layer="96"/>
+<attribute name="PACKAGE" x="60.96" y="10.16" size="1.27" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="M1" gate="A" x="73.66" y="-43.18" smashed="yes" grouprefs="JTAG_CONNECTOR">
 <attribute name="NAME" x="60.96" y="-34.29" size="1.778" layer="95"/>
@@ -2546,6 +2648,27 @@
 </instance>
 <instance part="S37" gate="A" x="88.9" y="38.1" smashed="yes" grouprefs="RESET_SUPERVISOR">
 <attribute name="VALUE" x="88.9" y="42.418" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="Y1" gate="A" x="-48.26" y="0" smashed="yes">
+<attribute name="NAME" x="-50.8" y="3.302" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-50.8" y="-4.318" size="1.27" layer="95"/>
+<attribute name="PACKAGE" x="-50.8" y="-6.35" size="1.27" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="C9" gate="A" x="-60.96" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-58.42" y="-6.604" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-58.42" y="-8.255" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="-58.42" y="-9.652" size="1.016" layer="96"/>
+</instance>
+<instance part="C10" gate="A" x="-35.56" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-33.02" y="-6.604" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-33.02" y="-8.255" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="-33.02" y="-9.652" size="1.016" layer="96"/>
+</instance>
+<instance part="S38" gate="A" x="-60.96" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="-17.272" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="S39" gate="A" x="-35.56" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="-35.56" y="-17.272" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -2712,12 +2835,12 @@
 <segment>
 <pinref part="S29" gate="A" pin="GND"/>
 <pinref part="C6" gate="A" pin="2"/>
-<wire x1="-45.72" y1="22.86" x2="-45.72" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="22.86" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S32" gate="A" pin="GND"/>
 <pinref part="PS1" gate="A" pin="CATHODE"/>
-<wire x1="-78.74" y1="-55.88" x2="-78.74" y2="-53.34" width="0.1524" layer="91" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
+<wire x1="-91.44" y1="-53.34" x2="-91.44" y2="-50.8" width="0.1524" layer="91" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
 </segment>
 <segment>
 <pinref part="C8" gate="A" pin="2"/>
@@ -2754,6 +2877,16 @@
 <pinref part="S35" gate="A" pin="GND"/>
 <wire x1="55.88" y1="17.78" x2="55.88" y2="12.7" width="0.1524" layer="91" grouprefs="RESET_SUPERVISOR"/>
 </segment>
+<segment>
+<pinref part="C9" gate="A" pin="2"/>
+<pinref part="S38" gate="A" pin="GND"/>
+<wire x1="-60.96" y1="-10.16" x2="-60.96" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C10" gate="A" pin="2"/>
+<pinref part="S39" gate="A" pin="GND"/>
+<wire x1="-35.56" y1="-10.16" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="U1_VDDC" class="0">
 <segment>
@@ -2763,8 +2896,8 @@
 <pinref part="U1" gate="A" pin="VDDC_2"/>
 <wire x1="-25.4" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C6" gate="A" pin="1"/>
-<wire x1="-45.72" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="30.48" x2="-45.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="30.48" x2="-43.18" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-25.4" y="33.02"/>
 </segment>
 </net>
@@ -2792,8 +2925,8 @@
 <net name="VBAT" class="0">
 <segment>
 <pinref part="PS1" gate="A" pin="ANODE"/>
-<wire x1="-78.74" y1="-38.1" x2="-78.74" y2="-35.56" width="0.1524" layer="91" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
-<label x="-78.74" y="-34.798" size="1.27" layer="95" align="bottom-center" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
+<wire x1="-91.44" y1="-35.56" x2="-91.44" y2="-33.02" width="0.1524" layer="91" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
+<label x="-91.44" y="-32.258" size="1.27" layer="95" align="bottom-center" grouprefs="COIN_CELL_BATTERY_SOCKET"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VBAT"/>
@@ -2825,17 +2958,30 @@
 <wire x1="-55.88" y1="48.26" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<description>JTAG_INTERFACE</description>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
+<net name="N$39" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="OSC0"/>
+<pinref part="C9" gate="A" pin="1"/>
+<wire x1="-22.86" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="10.16" x2="-60.96" y2="0" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="A" pin="1"/>
+<wire x1="-60.96" y1="0" x2="-60.96" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="0" x2="-60.96" y2="0" width="0.1524" layer="91"/>
+<junction x="-60.96" y="0"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="C10" gate="A" pin="1"/>
+<pinref part="U1" gate="A" pin="OSC1"/>
+<wire x1="-35.56" y1="-5.08" x2="-35.56" y2="0" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="0" x2="-35.56" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="A" pin="2"/>
+<wire x1="-43.18" y1="0" x2="-35.56" y2="0" width="0.1524" layer="91"/>
+<junction x="-35.56" y="0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -2862,7 +3008,8 @@
 <approved hash="104,2,-22.86,48.26,U1,VDD_4,3V3,,,"/>
 <approved hash="104,2,-22.86,45.72,U1,VDD,3V3,,,"/>
 <approved hash="104,2,-22.86,30.48,U1,VDDC,U1_VDDC,,,"/>
-<approved hash="104,2,-83.82,53.34,IC11,OUT,3V3,,,"/>
+<approved hash="104,2,-60.96,53.34,IC11,OUT,3V3,,,"/>
+<approved hash="104,2,58.42,22.86,IC12,VDD,3V3,,,"/>
 </errors>
 </schematic>
 </drawing>

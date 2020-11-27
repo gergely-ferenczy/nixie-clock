@@ -14,7 +14,6 @@ UsedLibrary="D:/Work/Eagle/Libraries/ICs.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Misc.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Resistors.lbr"
 UsedLibrary="D:/Work/Eagle/Libraries/Supplies.lbr"
-UsedLibrary="D:/Work/Eagle/Libraries/Harwin - S8421-45R.lbr"
 
 [Win_1]
 Type="Control Panel"
