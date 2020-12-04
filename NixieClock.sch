@@ -684,26 +684,22 @@
 <text x="0" y="2.2009" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.2009" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="OSCL550P840X380X250-4N" urn="urn:adsk.eagle:footprint:25030793/1">
-<description>4-Oscillator-L Bend, 5.50 mm pitch, 8.40 X 3.80 X 2.50 mm body
-&lt;p&gt;4-pin Oscillator-L Bend package with 5.50 mm pitch with body size 8.40 X 3.80 X 2.50 mm&lt;/p&gt;</description>
-<circle x="-2.504" y="3.7402" radius="0.25" width="0" layer="21"/>
-<wire x1="-2" y1="3.4902" x2="-2" y2="4.2" width="0.12" layer="21"/>
-<wire x1="-2" y1="4.2" x2="2" y2="4.2" width="0.12" layer="21"/>
-<wire x1="2" y1="4.2" x2="2" y2="3.4902" width="0.12" layer="21"/>
-<wire x1="-2" y1="-3.4902" x2="-2" y2="-4.2" width="0.12" layer="21"/>
-<wire x1="-2" y1="-4.2" x2="2" y2="-4.2" width="0.12" layer="21"/>
-<wire x1="2" y1="-4.2" x2="2" y2="-3.4902" width="0.12" layer="21"/>
-<wire x1="2" y1="-4.2" x2="-2" y2="-4.2" width="0.12" layer="51"/>
-<wire x1="-2" y1="-4.2" x2="-2" y2="4.2" width="0.12" layer="51"/>
-<wire x1="-2" y1="4.2" x2="2" y2="4.2" width="0.12" layer="51"/>
-<wire x1="2" y1="4.2" x2="2" y2="-4.2" width="0.12" layer="51"/>
-<smd name="1" x="-1.49" y="2.75" dx="1.2354" dy="0.9723" layer="1"/>
-<smd name="2" x="-1.49" y="-2.75" dx="1.2354" dy="0.9723" layer="1"/>
-<smd name="3" x="1.49" y="-2.75" dx="1.2354" dy="0.9723" layer="1"/>
-<smd name="4" x="1.49" y="2.75" dx="1.2354" dy="0.9723" layer="1"/>
-<text x="0" y="4.835" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-4.835" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<package name="OSCCC320X150X90N" urn="urn:adsk.eagle:footprint:25206281/2">
+<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
+<circle x="-2.3099" y="-0.4625" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.8659" y1="-0.3099" x2="-1.8659" y2="0.3099" width="0.12" layer="21"/>
+<wire x1="1.8659" y1="-0.3099" x2="1.8659" y2="0.3099" width="0.12" layer="21"/>
+<wire x1="-0.4651" y1="1.0409" x2="0.4651" y2="1.0409" width="0.12" layer="21"/>
+<wire x1="-0.4651" y1="-1.0409" x2="0.4651" y2="-1.0409" width="0.12" layer="21"/>
+<wire x1="1.7" y1="-0.825" x2="-1.7" y2="-0.825" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="-0.825" x2="-1.7" y2="0.825" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="0.825" x2="1.7" y2="0.825" width="0.12" layer="51"/>
+<wire x1="1.7" y1="0.825" x2="1.7" y2="-0.825" width="0.12" layer="51"/>
+<smd name="1" x="-1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
+<smd name="2" x="1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
+<text x="0" y="1.6759" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.6759" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:25040649/1">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
@@ -774,11 +770,11 @@
 <packageinstance name="OSCCC320X250X100N"/>
 </packageinstances>
 </package3d>
-<package3d name="OSCL550P840X380X250-4N" urn="urn:adsk.eagle:package:25030719/2" type="model">
-<description>4-Oscillator-L Bend, 5.50 mm pitch, 8.40 X 3.80 X 2.50 mm body
-&lt;p&gt;4-pin Oscillator-L Bend package with 5.50 mm pitch with body size 8.40 X 3.80 X 2.50 mm&lt;/p&gt;</description>
+<package3d name="OSCCC320X150X90N" urn="urn:adsk.eagle:package:25206263/2" type="model">
+<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="OSCL550P840X380X250-4N"/>
+<packageinstance name="OSCCC320X150X90N"/>
 </packageinstances>
 </package3d>
 <package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:25040621/2" type="model">
@@ -1207,26 +1203,26 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ABS25-32.768KHZ-1-T" prefix="Y">
-<description>SMT Crystal, Crystal, 32.768 kHz, SMD, 8mm x 3.8mm, 12.5 pF, 10 ppm</description>
+<deviceset name="ABS07AIG-32.768KHZ-1-T" prefix="Y">
+<description>SMT Crystal, 32.768 kHz, SMD, 3.2mm x 1.5mm, 12.5 pF, 10 ppm</description>
 <gates>
 <gate name="A" symbol="XTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="OSCL550P840X380X250-4N">
+<device name="" package="OSCCC320X150X90N">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="4"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25030719/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25206263/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
-<attribute name="PACKAGE" value="SMD 8x3.8" constant="no"/>
+<attribute name="PACKAGE" value="SMD 3.2x1.5" constant="no"/>
 <attribute name="PARAMETER" value="±10 ppm, 12.5 pF" constant="no"/>
-<attribute name="PARTNUMBER" value="ABM8G-16.000MHZ-18-D2Y-T" constant="no"/>
+<attribute name="PARTNUMBER" value="ABS07AIG-32.768KHZ-1-T" constant="no"/>
 <attribute name="VALUE" value="32.768 kHz" constant="no"/>
 </technology>
 </technologies>
@@ -1860,6 +1856,9 @@
 <pad name="1" x="-2.325753125" y="4.42615625" drill="0.6"/>
 <circle x="-2.9" y="5.4" radius="0" width="0.5" layer="22"/>
 <circle x="-2.9" y="5.4" radius="0" width="0.5" layer="21"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="40"/>
+<text x="0" y="10.16" size="1.27" layer="26" rot="MR0" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="28" rot="MR0" align="bottom-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="22"/>
 </package>
 <package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/3">
@@ -2655,7 +2654,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C10" library="Capacitors" deviceset="C0603C430J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="43p/50V"/>
 <part name="S38" library="Supplies" deviceset="GND" device=""/>
 <part name="S39" library="Supplies" deviceset="GND" device=""/>
-<part name="Y2" library="ICs" deviceset="ABS25-32.768KHZ-1-T" device="" package3d_urn="urn:adsk.eagle:package:25030719/2" value="32.768 kHz"/>
+<part name="Y2" library="ICs" deviceset="ABS07AIG-32.768KHZ-1-T" device="" package3d_urn="urn:adsk.eagle:package:25206263/2" value="32.768 kHz"/>
 <part name="C11" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
 <part name="C12" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
 <part name="S40" library="Supplies" deviceset="GND" device=""/>
