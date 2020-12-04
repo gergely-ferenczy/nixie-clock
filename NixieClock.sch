@@ -1862,7 +1862,7 @@
 <circle x="-2.9" y="5.4" radius="0" width="0.5" layer="21"/>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="22"/>
 </package>
-<package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/1">
+<package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/3">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
 <wire x1="-8" y1="12" x2="-6" y2="12" width="0.15" layer="21"/>
 <wire x1="-8" y1="-12" x2="-6" y2="-12" width="0.15" layer="21"/>
@@ -1873,10 +1873,10 @@
 <wire x1="8" y1="-14.5" x2="-8" y2="-14.5" width="0.1" layer="41"/>
 <wire x1="-0.5" y1="-15.325" x2="0.5" y2="-15.325" width="0.15" layer="21"/>
 <wire x1="0" y1="-14.825" x2="0" y2="-15.825" width="0.15" layer="21"/>
-<wire x1="-8" y1="-14.5" x2="8" y2="-14.5" width="0.127" layer="4"/>
-<wire x1="8" y1="-14.5" x2="8" y2="12" width="0.127" layer="4"/>
-<wire x1="8" y1="12" x2="-8" y2="12" width="0.127" layer="4"/>
-<wire x1="-8" y1="12" x2="-8" y2="-14.5" width="0.127" layer="4"/>
+<wire x1="-8" y1="-14.5" x2="8" y2="-14.5" width="0.127" layer="39"/>
+<wire x1="8" y1="-14.5" x2="8" y2="12" width="0.127" layer="39"/>
+<wire x1="8" y1="12" x2="-8" y2="12" width="0.127" layer="39"/>
+<wire x1="-8" y1="12" x2="-8" y2="-14.5" width="0.127" layer="39"/>
 <wire x1="-8" y1="12" x2="-8" y2="10" width="0.15" layer="21"/>
 <wire x1="-8" y1="-12" x2="-8" y2="-10" width="0.15" layer="21"/>
 <wire x1="8" y1="-12" x2="8" y2="-10" width="0.15" layer="21"/>
@@ -1890,11 +1890,11 @@
 <text x="-8" y="-17" size="1" layer="27">&gt;VALUE</text>
 <smd name="1" x="0" y="8.5" dx="2.6" dy="3" layer="1"/>
 <smd name="2" x="0" y="-12.9" dx="3.6" dy="3" layer="1"/>
-<circle x="0" y="0" radius="10" width="0.127" layer="4"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="39"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="S8421-45R" urn="urn:adsk.eagle:package:24998728/2" type="model">
+<package3d name="S8421-45R" urn="urn:adsk.eagle:package:24998728/4" type="model">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
 <packageinstances>
 <packageinstance name="S8421-45R"/>
@@ -1978,7 +1978,7 @@
 <connect gate="A" pin="CATHODE" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24998728/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24998728/4"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -2566,6 +2566,8 @@ DIN A3, landscape with location and doc. field</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="Supply" width="1" drill="0">
+</class>
 </classes>
 <groups>
 <schematic_group name="COIN_CELL_BATTERY_SOCKET"/>
@@ -2631,7 +2633,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C6" library="Capacitors" deviceset="C2012X7R1E335K125" device="" package3d_urn="urn:adsk.eagle:package:24971576/1" value="3u3/25V"/>
 <part name="S29" library="Supplies" deviceset="GND" device=""/>
 <part name="S30" library="Supplies" deviceset="3V3" device=""/>
-<part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/2" value="S8421-45R"/>
+<part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/4" value="S8421-45R"/>
 <part name="S32" library="Supplies" deviceset="GND" device=""/>
 <part name="IC11" library="ICs" deviceset="TPS73633DBVT" device="" package3d_urn="urn:adsk.eagle:package:25020238/2"/>
 <part name="C7" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
@@ -4371,7 +4373,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="22.86" y1="-17.78" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="VSUPP" class="1">
 <segment>
 <pinref part="J1" gate="A" pin="1"/>
 <pinref part="D3" gate="A" pin="2"/>
@@ -4561,7 +4563,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="-12.7" y="27.94"/>
 </segment>
 </net>
-<net name="N$73" class="0">
+<net name="PRE_HV" class="0">
 <segment>
 <pinref part="D2" gate="A" pin="1"/>
 <pinref part="C14" gate="A" pin="1"/>
