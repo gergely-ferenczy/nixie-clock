@@ -156,20 +156,6 @@
 </library>
 <library name="Capacitors">
 <packages>
-<package name="CAPC3216X170N" urn="urn:adsk.eagle:footprint:25131940/1">
-<description>Chip, 3.20 X 1.60 X 1.70 mm body
-&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.70 mm&lt;/p&gt;</description>
-<wire x1="1.7" y1="1.2217" x2="-1.7" y2="1.2217" width="0.12" layer="21"/>
-<wire x1="1.7" y1="-1.2217" x2="-1.7" y2="-1.2217" width="0.12" layer="21"/>
-<wire x1="1.7" y1="-0.9" x2="-1.7" y2="-0.9" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="-0.9" x2="-1.7" y2="0.9" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="0.9" x2="1.7" y2="0.9" width="0.12" layer="51"/>
-<wire x1="1.7" y1="0.9" x2="1.7" y2="-0.9" width="0.12" layer="51"/>
-<smd name="1" x="-1.4754" y="0" dx="1.1646" dy="1.8153" layer="1"/>
-<smd name="2" x="1.4754" y="0" dx="1.1646" dy="1.8153" layer="1"/>
-<text x="0" y="1.8567" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.8567" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 <package name="CAPC1608X80N" urn="urn:adsk.eagle:footprint:25020400/1">
 <description>Chip, 1.60 X 0.80 X 0.80 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.80 mm&lt;/p&gt;</description>
@@ -212,13 +198,6 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="CAPC3216X170N" urn="urn:adsk.eagle:package:25131932/1" type="model">
-<description>Chip, 3.20 X 1.60 X 1.70 mm body
-&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAPC3216X170N"/>
-</packageinstances>
-</package3d>
 <package3d name="CAPC1608X80N" urn="urn:adsk.eagle:package:25020390/1" type="model">
 <description>Chip, 1.60 X 0.80 X 0.80 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.80 mm&lt;/p&gt;</description>
@@ -273,26 +252,26 @@
 </symbols>
 <devicesets>
 <deviceset name="C0603C103K5RACTU" prefix="C">
-<description>SMT Capacitor, 10u/25V, X5R, 10%, 0603, KEMET</description>
+<description>SMT Capacitor, 10n/50V, X5R, 10%, 0603, KEMET</description>
 <gates>
 <gate name="A" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CAPC3216X170N">
+<device name="" package="CAPC1608X80N">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25131932/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25020390/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="KEMET" constant="no"/>
-<attribute name="PACKAGE" value="1206" constant="no"/>
-<attribute name="PARAMETER" value="X5R, 10%" constant="no"/>
-<attribute name="PARTNUMBER" value="C1206C106K3PACTU" constant="no"/>
-<attribute name="VALUE" value="10u/25V" constant="no"/>
+<attribute name="PACKAGE" value="0603" constant="no"/>
+<attribute name="PARAMETER" value="X7R, 10%" constant="no"/>
+<attribute name="PARTNUMBER" value="C0603C103K5RACTU" constant="no"/>
+<attribute name="VALUE" value="10n/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1854,12 +1833,12 @@
 <pad name="3" x="-4.963784375" y="0.60068125" drill="0.6"/>
 <pad name="2" x="-4.116175" y="2.8385" drill="0.6"/>
 <pad name="1" x="-2.325753125" y="4.42615625" drill="0.6"/>
-<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="22"/>
-<circle x="-2.9" y="5.4" radius="0" width="0.5" layer="21"/>
-<circle x="0" y="0" radius="9.5" width="0.127" layer="40"/>
-<text x="0" y="10.16" size="1.27" layer="26" rot="MR0" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.27" layer="28" rot="MR0" align="bottom-center">&gt;VALUE</text>
-<circle x="0" y="0" radius="9.5" width="0.127" layer="22"/>
+<circle x="-3.4" y="5.5" radius="0" width="0.5" layer="22"/>
+<circle x="-3.4" y="5.5" radius="0" width="0.5" layer="21"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="39"/>
+<text x="0" y="10.16" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
 </package>
 <package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/3">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
@@ -2584,17 +2563,17 @@ DIN A3, landscape with location and doc. field</description>
 <part name="IC6" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
 <part name="IC7" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
 <part name="IC8" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="C1" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
-<part name="C2" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
-<part name="C3" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
-<part name="C4" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
+<part name="C1" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
+<part name="C2" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
+<part name="C3" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
+<part name="C4" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="Q1" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
 <part name="Q2" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
 <part name="Q3" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
 <part name="Q4" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
 <part name="IC9" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
 <part name="IC10" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="C5" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
+<part name="C5" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="S1" library="Supplies" deviceset="3V3" device=""/>
 <part name="S2" library="Supplies" deviceset="3V3" device=""/>
 <part name="S3" library="Supplies" deviceset="3V3" device=""/>
@@ -2635,7 +2614,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/4" value="S8421-45R"/>
 <part name="S32" library="Supplies" deviceset="GND" device=""/>
 <part name="IC11" library="ICs" deviceset="TPS73633DBVT" device="" package3d_urn="urn:adsk.eagle:package:25020238/2"/>
-<part name="C7" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
+<part name="C7" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C8" library="Capacitors" deviceset="CL10A105KA8NNNC" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="1u/25V"/>
 <part name="S33" library="Supplies" deviceset="12V" device=""/>
 <part name="S34" library="Supplies" deviceset="GND" device=""/>
@@ -2691,7 +2670,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S51" library="Supplies" deviceset="GND" device=""/>
 <part name="S52" library="Supplies" deviceset="GND" device=""/>
 <part name="S53" library="Supplies" deviceset="GND" device=""/>
-<part name="C16" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25131932/1" value="10u/25V"/>
+<part name="C16" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C17" library="Capacitors" deviceset="C0603C104M5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="100n/50V"/>
 <part name="S54" library="Supplies" deviceset="GND" device=""/>
 <part name="S55" library="Supplies" deviceset="GND" device=""/>
