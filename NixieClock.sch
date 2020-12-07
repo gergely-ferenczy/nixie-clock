@@ -1868,18 +1868,18 @@
 <library name="Misc">
 <packages>
 <package name="NIXIE-IN-8-2">
-<pad name="12" x="2.3234375" y="4.427371875" drill="0.6"/>
-<pad name="11" x="4.1146875" y="2.840653125" drill="0.6"/>
-<pad name="10" x="4.96346875" y="0.60328125" drill="0.6"/>
-<pad name="9" x="4.675365625" y="-1.77226875" drill="0.6"/>
-<pad name="8" x="3.316365625" y="-3.741884375" drill="0.6"/>
-<pad name="7" x="1.19775" y="-4.85441875" drill="0.6"/>
-<pad name="6" x="-1.195209375" y="-4.85504375" drill="0.6"/>
-<pad name="5" x="-3.31440625" y="-3.743621875" drill="0.6"/>
-<pad name="4" x="-4.6744375" y="-1.77471875" drill="0.6"/>
-<pad name="3" x="-4.963784375" y="0.60068125" drill="0.6"/>
-<pad name="2" x="-4.116175" y="2.8385" drill="0.6"/>
-<pad name="1" x="-2.325753125" y="4.42615625" drill="0.6"/>
+<pad name="12" x="2.3234375" y="4.427371875" drill="0.6" diameter="1.3"/>
+<pad name="11" x="4.1146875" y="2.840653125" drill="0.6" diameter="1.3"/>
+<pad name="10" x="4.96346875" y="0.60328125" drill="0.6" diameter="1.3"/>
+<pad name="9" x="4.675365625" y="-1.77226875" drill="0.6" diameter="1.3"/>
+<pad name="8" x="3.316365625" y="-3.741884375" drill="0.6" diameter="1.3"/>
+<pad name="7" x="1.19775" y="-4.85441875" drill="0.6" diameter="1.3"/>
+<pad name="6" x="-1.195209375" y="-4.85504375" drill="0.6" diameter="1.3"/>
+<pad name="5" x="-3.31440625" y="-3.743621875" drill="0.6" diameter="1.3"/>
+<pad name="4" x="-4.6744375" y="-1.77471875" drill="0.6" diameter="1.3"/>
+<pad name="3" x="-4.963784375" y="0.60068125" drill="0.6" diameter="1.3"/>
+<pad name="2" x="-4.116175" y="2.8385" drill="0.6" diameter="1.3"/>
+<pad name="1" x="-2.325753125" y="4.42615625" drill="0.6" diameter="1.3"/>
 <circle x="-3.4" y="5.5" radius="0" width="0.5" layer="22"/>
 <circle x="-3.4" y="5.5" radius="0" width="0.5" layer="21"/>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="39"/>
@@ -1887,7 +1887,7 @@
 <text x="0" y="-11.43" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
 </package>
-<package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/3" locally_modified="yes">
+<package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/4">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
 <wire x1="-8" y1="12" x2="-6" y2="12" width="0.15" layer="21"/>
 <wire x1="-8" y1="-12" x2="-6" y2="-12" width="0.15" layer="21"/>
@@ -1913,9 +1913,21 @@
 <smd name="2" x="0" y="-12.9" dx="3.6" dy="3" layer="1"/>
 <circle x="0" y="0" radius="10" width="0.127" layer="39"/>
 </package>
+<package name="MOUNTING_HOLE_3MM">
+<pad name="0" x="0" y="0" drill="3" diameter="6" thermals="no"/>
+<pad name="1" x="-2.5" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="3" x="0" y="-2.5" drill="0.3" stop="no" thermals="no"/>
+<pad name="5" x="2.5" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="7" x="0" y="2.5" drill="0.3" stop="no" thermals="no"/>
+<pad name="8" x="-1.7678" y="1.7678" drill="0.3" stop="no" thermals="no"/>
+<pad name="4" x="1.7678" y="-1.7678" drill="0.3" stop="no" thermals="no"/>
+<pad name="2" x="-1.7678" y="-1.7678" drill="0.3" stop="no" thermals="no"/>
+<pad name="6" x="1.7678" y="1.7678" drill="0.3" stop="no" thermals="no"/>
+<circle x="0" y="0" radius="3.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="S8421-45R" urn="urn:adsk.eagle:package:24998728/4" type="model">
+<package3d name="S8421-45R" urn="urn:adsk.eagle:package:24998728/5" type="model">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
 <packageinstances>
 <packageinstance name="S8421-45R"/>
@@ -1959,6 +1971,11 @@
 <pin name="ANODE" x="0" y="7.62" visible="pad" length="middle" direction="pas" rot="R270"/>
 <pin name="CATHODE" x="0" y="-7.62" visible="pad" length="middle" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="MOUNTING_HOLE">
+<pin name="GND" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<circle x="0" y="0" radius="1.27" width="0.762" layer="94"/>
+<text x="0" y="2.54" locked="yes" size="1.27" layer="95" align="bottom-center">MT</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NIXIE-IN-8-2" prefix="V">
@@ -1999,7 +2016,7 @@
 <connect gate="A" pin="CATHODE" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24998728/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24998728/5"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -2008,6 +2025,21 @@
 <attribute name="PARTNUMBER" value="S8421-45R" constant="no"/>
 <attribute name="VALUE" value="S8421-45R" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE_3MM" prefix="MT">
+<gates>
+<gate name="A" symbol="MOUNTING_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTING_HOLE_3MM">
+<connects>
+<connect gate="A" pin="GND" pad="0 1 2 3 4 5 6 7 8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2043,23 +2075,9 @@
 <smd name="03" x="-1.27" y="-2.035" dx="0.76" dy="2.4" layer="1"/>
 <smd name="04" x="-1.27" y="2.035" dx="0.76" dy="2.4" layer="1"/>
 </package>
-<package name="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE" urn="urn:adsk.eagle:footprint:25040456/1">
+<package name="PCB_TERMINAL_PAD">
 <description>PCB Terminal, 2.8mm x 0.81mm, Right Angle</description>
-<pad name="1" x="-2.5" y="0" drill="1.4"/>
-<pad name="2" x="2.5" y="0" drill="1.4"/>
-<wire x1="-3.7" y1="1.2" x2="-3.7" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-1.2" x2="9.7" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="9.7" y1="-1.2" x2="9.7" y2="1.2" width="0.127" layer="51"/>
-<wire x1="9.7" y1="1.2" x2="-3.7" y2="1.2" width="0.127" layer="51"/>
-<wire x1="4" y1="-0.4" x2="9.7" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="4" y1="0.4" x2="9.7" y2="0.4" width="0.127" layer="21"/>
-<wire x1="9.7" y1="-0.4" x2="9.7" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-1" y1="0.4" x2="1" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.4" x2="1" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="1.2" x2="-3.7" y2="-1.2" width="0.127" layer="39"/>
-<wire x1="-3.7" y1="-1.2" x2="9.7" y2="-1.2" width="0.127" layer="39"/>
-<wire x1="9.7" y1="-1.2" x2="9.7" y2="1.2" width="0.127" layer="39"/>
-<wire x1="9.7" y1="1.2" x2="-3.7" y2="1.2" width="0.127" layer="39"/>
+<smd name="1" x="0" y="0" dx="4" dy="2" layer="1" thermals="no" cream="no"/>
 </package>
 <package name="MOLEX_501568-0607" urn="urn:adsk.eagle:footprint:25035325/2">
 <description>CONN HEADER SMD R/A 6POS 1MM</description>
@@ -2096,12 +2114,6 @@
 <description>JTAG 10-pin ARM compatible connector, Minitek127, Shrouded Board to Board Header, Surface Mount, 10 positions, 1.27mm (0.500in) pitch.</description>
 <packageinstances>
 <packageinstance name="20021521-00010T1LF"/>
-</packageinstances>
-</package3d>
-<package3d name="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE" urn="urn:adsk.eagle:package:25040458/2" type="model">
-<description>PCB Terminal, 2.8mm x 0.81mm, Right Angle</description>
-<packageinstances>
-<packageinstance name="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE"/>
 </packageinstances>
 </package3d>
 <package3d name="MOLEX_501568-0607" urn="urn:adsk.eagle:package:25035327/3" type="model">
@@ -2190,23 +2202,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE" prefix="J">
+<deviceset name="PCB_TERMINAL_PAD" prefix="J">
 <gates>
 <gate name="A" symbol="PCB_TERMINAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE">
+<device name="" package="PCB_TERMINAL_PAD">
 <connects>
-<connect gate="A" pin="1" pad="1 2"/>
+<connect gate="A" pin="1" pad="1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25040458/2"/>
-</package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="AMP - TE CONNECTIVITY" constant="no"/>
-<attribute name="PARAMETER" value="2.8mmx0.81mm/1.4mm" constant="no"/>
-<attribute name="PARTNUMBER" value="1-725996-2" constant="no"/>
+<attribute name="PARAMETER" value="4mmx2mm" constant="no"/>
 <attribute name="VALUE" value="PCB Terminal" constant="no"/>
 </technology>
 </technologies>
@@ -2644,7 +2651,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C6" library="Capacitors" deviceset="C2012X7R1E335K125" device="" package3d_urn="urn:adsk.eagle:package:24971576/1" value="3u3/25V"/>
 <part name="S29" library="Supplies" deviceset="GND" device=""/>
 <part name="S30" library="Supplies" deviceset="3V3" device=""/>
-<part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/4" value="S8421-45R"/>
+<part name="PS1" library="Misc" deviceset="S8421-45R" device="" package3d_urn="urn:adsk.eagle:package:24998728/5" value="S8421-45R"/>
 <part name="S32" library="Supplies" deviceset="GND" device=""/>
 <part name="IC11" library="ICs" deviceset="TPS73633DBVT" device="" package3d_urn="urn:adsk.eagle:package:25020238/2"/>
 <part name="C7" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
@@ -2675,8 +2682,8 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S42" library="Supplies" deviceset="3V3" device=""/>
 <part name="J3" library="Connectors" deviceset="MOLEX_501568-0607" device="" package3d_urn="urn:adsk.eagle:package:25035327/3" value="501568-0607"/>
 <part name="S43" library="Supplies" deviceset="GND" device=""/>
-<part name="J1" library="Connectors" deviceset="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE" device="" package3d_urn="urn:adsk.eagle:package:25040458/2" value="PCB Terminal"/>
-<part name="J2" library="Connectors" deviceset="PCB_TERMINAL_2.8X0.81_RGIHT_ANGLE" device="" package3d_urn="urn:adsk.eagle:package:25040458/2" value="PCB Terminal"/>
+<part name="J1" library="Connectors" deviceset="PCB_TERMINAL_PAD" device="" value="PCB Terminal"/>
+<part name="J2" library="Connectors" deviceset="PCB_TERMINAL_PAD" device="" value="PCB Terminal"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="Nixie Control And Driver"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="MCU And Connectors"/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="High Voltage Supply"/>
@@ -2721,6 +2728,14 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R17" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
 <part name="S10" library="Supplies" deviceset="GND" device=""/>
 <part name="R18" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
+<part name="MT1" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
+<part name="MT2" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
+<part name="MT3" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
+<part name="MT4" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
+<part name="S5" library="Supplies" deviceset="GND" device=""/>
+<part name="S15" library="Supplies" deviceset="GND" device=""/>
+<part name="S20" library="Supplies" deviceset="GND" device=""/>
+<part name="S62" library="Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4303,28 +4318,28 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-60.96" y1="15.24" x2="-60.96" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="SW_3" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PE0"/>
 <pinref part="J3" gate="A" pin="1"/>
 <wire x1="22.86" y1="-7.62" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="SW_2" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PE1"/>
 <pinref part="J3" gate="A" pin="2"/>
 <wire x1="22.86" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="SW_1" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PE2"/>
 <pinref part="J3" gate="A" pin="3"/>
 <wire x1="22.86" y1="-12.7" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="LIGHT_SEN" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PE4"/>
 <pinref part="J3" gate="A" pin="5"/>
@@ -4687,6 +4702,55 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="35.56" y1="5.08" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="30.48" y="-2.54"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>Miscellaneous</description>
+<plain>
+</plain>
+<instances>
+<instance part="MT1" gate="A" x="-15.24" y="5.08" smashed="yes"/>
+<instance part="MT2" gate="A" x="-5.08" y="5.08" smashed="yes"/>
+<instance part="MT3" gate="A" x="5.08" y="5.08" smashed="yes"/>
+<instance part="MT4" gate="A" x="15.24" y="5.08" smashed="yes"/>
+<instance part="S5" gate="A" x="-15.24" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="-7.112" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="S15" gate="A" x="-5.08" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="-5.08" y="-7.112" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="S20" gate="A" x="5.08" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="5.08" y="-7.112" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="S62" gate="A" x="15.24" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="15.24" y="-7.112" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="MT1" gate="A" pin="GND"/>
+<pinref part="S5" gate="A" pin="GND"/>
+<wire x1="-15.24" y1="2.54" x2="-15.24" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MT2" gate="A" pin="GND"/>
+<pinref part="S15" gate="A" pin="GND"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MT3" gate="A" pin="GND"/>
+<pinref part="S20" gate="A" pin="GND"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MT4" gate="A" pin="GND"/>
+<pinref part="S62" gate="A" pin="GND"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
