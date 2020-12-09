@@ -510,35 +510,6 @@
 </library>
 <library name="ICs">
 <packages>
-<package name="SOP65P640X120-16N" urn="urn:adsk.eagle:footprint:24918270/1">
-<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.50 X 1.20 mm body
-&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.50 X 1.20 mm&lt;/p&gt;</description>
-<circle x="-3.0038" y="2.9824" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.35" y1="2.7924" x2="2.35" y2="2.7924" width="0.12" layer="21"/>
-<wire x1="-2.35" y1="-2.7924" x2="2.35" y2="-2.7924" width="0.12" layer="21"/>
-<wire x1="2.35" y1="-2.55" x2="-2.35" y2="-2.55" width="0.12" layer="51"/>
-<wire x1="-2.35" y1="-2.55" x2="-2.35" y2="2.55" width="0.12" layer="51"/>
-<wire x1="-2.35" y1="2.55" x2="2.35" y2="2.55" width="0.12" layer="51"/>
-<wire x1="2.35" y1="2.55" x2="2.35" y2="-2.55" width="0.12" layer="51"/>
-<smd name="1" x="-2.9717" y="2.275" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="2" x="-2.9717" y="1.625" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="3" x="-2.9717" y="0.975" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="4" x="-2.9717" y="0.325" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="5" x="-2.9717" y="-0.325" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="6" x="-2.9717" y="-0.975" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="7" x="-2.9717" y="-1.625" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="8" x="-2.9717" y="-2.275" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="9" x="2.9717" y="-2.275" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="10" x="2.9717" y="-1.625" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="11" x="2.9717" y="-0.975" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="12" x="2.9717" y="-0.325" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="13" x="2.9717" y="0.325" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="14" x="2.9717" y="0.975" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="15" x="2.9717" y="1.625" dx="1.3719" dy="0.4068" layer="1"/>
-<smd name="16" x="2.9717" y="2.275" dx="1.3719" dy="0.4068" layer="1"/>
-<text x="0" y="3.8674" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.4274" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 <package name="SOIC127P600X175-16N" urn="urn:adsk.eagle:footprint:24873615/1">
 <description>16-SOIC, 1.27 mm pitch, 6.00 mm span, 9.90 X 3.90 X 1.75 mm body
 &lt;p&gt;16-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 9.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
@@ -754,13 +725,6 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="SOP65P640X120-16N" urn="urn:adsk.eagle:package:24918114/2" type="model">
-<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.50 X 1.20 mm body
-&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.50 X 1.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP65P640X120-16N"/>
-</packageinstances>
-</package3d>
 <package3d name="SOIC127P600X175-16N" urn="urn:adsk.eagle:package:24873557/2" type="model">
 <description>16-SOIC, 1.27 mm pitch, 6.00 mm span, 9.90 X 3.90 X 1.75 mm body
 &lt;p&gt;16-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 9.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
@@ -993,13 +957,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SN74HC595" prefix="IC">
+<deviceset name="SN74HC595DR" prefix="IC">
 <description>8-Bit Shift Register With 3-State Outputs</description>
 <gates>
 <gate name="A" symbol="SN74HC595" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PW" package="SOP65P640X120-16N">
+<device name="" package="SOIC127P600X175-16N">
 <connects>
 <connect gate="A" pin="!OE" pad="13"/>
 <connect gate="A" pin="!SRCLR" pad="10"/>
@@ -1019,12 +983,13 @@
 <connect gate="A" pin="VCC" pad="16"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24873557/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="PACKAGE" value="TSSOP-16" constant="no"/>
+<attribute name="PACKAGE" value="SOIC-16" constant="no"/>
+<attribute name="PARTNUMBER" value="SN74HC595DR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1913,7 +1878,7 @@
 <smd name="2" x="0" y="-12.9" dx="3.6" dy="3" layer="1"/>
 <circle x="0" y="0" radius="10" width="0.127" layer="39"/>
 </package>
-<package name="MOUNTING_HOLE_3MM">
+<package name="MOUNTING_HOLE_3MM" urn="urn:adsk.eagle:footprint:25316981/1">
 <pad name="0" x="0" y="0" drill="3" diameter="6" thermals="no"/>
 <pad name="1" x="-2.5" y="0" drill="0.3" stop="no" thermals="no"/>
 <pad name="3" x="0" y="-2.5" drill="0.3" stop="no" thermals="no"/>
@@ -1931,6 +1896,11 @@
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
 <packageinstances>
 <packageinstance name="S8421-45R"/>
+</packageinstances>
+</package3d>
+<package3d name="MOUNTING_HOLE_3MM" urn="urn:adsk.eagle:package:25316982/2" type="model">
+<packageinstances>
+<packageinstance name="MOUNTING_HOLE_3MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2038,6 +2008,9 @@
 <connects>
 <connect gate="A" pin="GND" pad="0 1 2 3 4 5 6 7 8"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25316982/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2048,8 +2021,7 @@
 </library>
 <library name="Connectors">
 <packages>
-<package name="20021521-00010T1LF" urn="urn:adsk.eagle:footprint:24925325/5">
-<description>JTAG 10-pin ARM compatible connector, Minitek127, Shrouded Board to Board Header, Surface Mount, 10 positions, 1.27mm (0.500in) pitch.</description>
+<package name="JTAG-ARM-10PIN-PLACEHOLDER" urn="urn:adsk.eagle:footprint:25317758/1">
 <wire x1="-6.4" y1="2.54" x2="-6.4" y2="-2.54" width="0.2" layer="21"/>
 <wire x1="6.4" y1="-2.54" x2="6.4" y2="2.54" width="0.2" layer="21"/>
 <wire x1="-6.223" y1="-1.715" x2="-6.223" y2="1.715" width="0.1" layer="51"/>
@@ -2110,10 +2082,9 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="20021521-00010T1LF" urn="urn:adsk.eagle:package:24925326/6" type="model">
-<description>JTAG 10-pin ARM compatible connector, Minitek127, Shrouded Board to Board Header, Surface Mount, 10 positions, 1.27mm (0.500in) pitch.</description>
+<package3d name="JTAG-ARM-10PIN-PLACEHOLDER" urn="urn:adsk.eagle:package:25317759/2" type="box">
 <packageinstances>
-<packageinstance name="20021521-00010T1LF"/>
+<packageinstance name="JTAG-ARM-10PIN-PLACEHOLDER"/>
 </packageinstances>
 </package3d>
 <package3d name="MOLEX_501568-0607" urn="urn:adsk.eagle:package:25035327/3" type="model">
@@ -2171,13 +2142,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JTAG-10PIN-ARM-CONN" prefix="J">
-<description>JTAG 10-pin ARM compatible connector, Minitek127, Shrouded Board to Board Header, Surface Mount, 10 positions, 1.27mm (0.500in) pitch.</description>
+<deviceset name="JTAG-ARM-10PIN-PLACEHOLDER" prefix="J">
+<description>JTAG 10-pin ARM compatible connector placeholder.</description>
 <gates>
 <gate name="A" symbol="JTAG-10PIN-ARM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="20021521-00010T1LF">
+<device name="" package="JTAG-ARM-10PIN-PLACEHOLDER">
 <connects>
 <connect gate="A" pin="!10/RST" pad="10"/>
 <connect gate="A" pin="1/VCC" pad="01"/>
@@ -2191,12 +2162,12 @@
 <connect gate="A" pin="9/GND3" pad="09"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24925326/6"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25317759/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="Amphenol" constant="no"/>
-<attribute name="PARTNUMBER" value="20021521-00010T1LF" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="PARTNUMBER" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2606,10 +2577,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="IC2" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
 <part name="IC3" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
 <part name="IC4" library="ICs" deviceset="SN75468" device="D" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
-<part name="IC5" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC6" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC7" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
-<part name="IC8" library="ICs" deviceset="SN74HC595" device="PW" package3d_urn="urn:adsk.eagle:package:24918114/2"/>
+<part name="IC5" library="ICs" deviceset="SN74HC595DR" device="" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC6" library="ICs" deviceset="SN74HC595DR" device="" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC7" library="ICs" deviceset="SN74HC595DR" device="" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
+<part name="IC8" library="ICs" deviceset="SN74HC595DR" device="" package3d_urn="urn:adsk.eagle:package:24873557/2"/>
 <part name="C1" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C2" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C3" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
@@ -2659,7 +2630,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S33" library="Supplies" deviceset="12V" device=""/>
 <part name="S34" library="Supplies" deviceset="GND" device=""/>
 <part name="IC12" library="ICs" deviceset="MCP111T-300E/TT" device="" package3d_urn="urn:adsk.eagle:package:25020091/3"/>
-<part name="M1" library="Connectors" deviceset="JTAG-10PIN-ARM-CONN" device="" package3d_urn="urn:adsk.eagle:package:24925326/6"/>
+<part name="M1" library="Connectors" deviceset="JTAG-ARM-10PIN-PLACEHOLDER" device="" package3d_urn="urn:adsk.eagle:package:25317759/2"/>
 <part name="R3" library="Resistors" deviceset="CRCW060310K0FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%"/>
 <part name="R4" library="Resistors" deviceset="CRCW060310K0FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%"/>
 <part name="S22" library="Supplies" deviceset="3V3" device=""/>
@@ -2728,10 +2699,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R17" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
 <part name="S10" library="Supplies" deviceset="GND" device=""/>
 <part name="R18" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
-<part name="MT1" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
-<part name="MT2" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
-<part name="MT3" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
-<part name="MT4" library="Misc" deviceset="MOUNTING_HOLE_3MM" device=""/>
+<part name="MT1" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
+<part name="MT2" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
+<part name="MT3" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
+<part name="MT4" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
 <part name="S5" library="Supplies" deviceset="GND" device=""/>
 <part name="S15" library="Supplies" deviceset="GND" device=""/>
 <part name="S20" library="Supplies" deviceset="GND" device=""/>
@@ -4765,20 +4736,18 @@ DIN A3, landscape with location and doc. field</description>
 <approved hash="104,1,-66.04,58.42,IC6,VCC,3V3,,,"/>
 <approved hash="104,1,-66.04,10.16,IC7,VCC,3V3,,,"/>
 <approved hash="104,1,-66.04,-38.1,IC8,VCC,3V3,,,"/>
-<approved hash="104,1,-12.7,-111.76,IC9,E,GND,,,"/>
-<approved hash="104,1,-66.04,-86.36,IC10,VCC,3V3,,,"/>
 <approved hash="104,2,-22.86,38.1,U1,VDDA,3V3,,,"/>
 <approved hash="104,2,22.86,-43.18,U1,GNDA,GND,,,"/>
 <approved hash="104,2,-22.86,53.34,U1,VDD_2,3V3,,,"/>
 <approved hash="104,2,22.86,-45.72,U1,GND_2,GND,,,"/>
-<approved hash="104,2,-22.86,33.02,U1,VDDC_2,U1_VDDC,,,"/>
+<approved hash="104,2,-22.86,33.02,U1,VDDC_2,MCU_VDDC,,,"/>
 <approved hash="104,2,-22.86,50.8,U1,VDD_3,3V3,,,"/>
 <approved hash="104,2,22.86,-48.26,U1,GND_3,GND,,,"/>
 <approved hash="104,2,22.86,-40.64,U1,GNDX,GND,,,"/>
 <approved hash="104,2,22.86,-50.8,U1,GND_4,GND,,,"/>
 <approved hash="104,2,-22.86,48.26,U1,VDD_4,3V3,,,"/>
 <approved hash="104,2,-22.86,45.72,U1,VDD,3V3,,,"/>
-<approved hash="104,2,-22.86,30.48,U1,VDDC,U1_VDDC,,,"/>
+<approved hash="104,2,-22.86,30.48,U1,VDDC,MCU_VDDC,,,"/>
 <approved hash="104,2,-88.9,86.36,IC11,OUT,3V3,,,"/>
 <approved hash="104,2,-127,12.7,IC12,VDD,3V3,,,"/>
 <approved hash="104,3,-58.42,12.7,IC13,V+,12V,,,"/>
