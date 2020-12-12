@@ -376,8 +376,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="C0603C430J5GACTU" prefix="C">
-<description>SMT Capacitor, 43p/50V, C0G/NP0, ±5%, 0603, KEMET</description>
+<deviceset name="C0603C200J1GACTU" prefix="C">
+<description>SMT Capacitor, 20p/50V, C0G/NP0, ±5%, 0603, KEMET</description>
 <gates>
 <gate name="A" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -395,8 +395,8 @@
 <attribute name="MANUFACTURER" value="KEMET" constant="no"/>
 <attribute name="PACKAGE" value="0603" constant="no"/>
 <attribute name="PARAMETER" value="C0G/NP0, ±5%" constant="no"/>
-<attribute name="PARTNUMBER" value="C0603C430J5GACTU" constant="no"/>
-<attribute name="VALUE" value="43p/50V" constant="no"/>
+<attribute name="PARTNUMBER" value="C0603C200J1GACTU" constant="no"/>
+<attribute name="VALUE" value="20p/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2030,7 +2030,7 @@
 </library>
 <library name="Misc">
 <packages>
-<package name="NIXIE-IN-8-2">
+<package name="NIXIE-IN-8-2" urn="urn:adsk.eagle:footprint:25351610/1">
 <pad name="12" x="2.3234375" y="4.427371875" drill="0.6" diameter="1.3"/>
 <pad name="11" x="4.1146875" y="2.840653125" drill="0.6" diameter="1.3"/>
 <pad name="10" x="4.96346875" y="0.60328125" drill="0.6" diameter="1.3"/>
@@ -2043,12 +2043,11 @@
 <pad name="3" x="-4.963784375" y="0.60068125" drill="0.6" diameter="1.3"/>
 <pad name="2" x="-4.116175" y="2.8385" drill="0.6" diameter="1.3"/>
 <pad name="1" x="-2.325753125" y="4.42615625" drill="0.6" diameter="1.3"/>
-<circle x="-3.4" y="5.5" radius="0" width="0.5" layer="22"/>
-<circle x="-3.4" y="5.5" radius="0" width="0.5" layer="21"/>
+<circle x="-3.4" y="5.5" radius="0.125" width="0.25" layer="21"/>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
 <text x="0" y="10.16" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-11.43" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
-<circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
 </package>
 <package name="S8421-45R" urn="urn:adsk.eagle:footprint:24998727/4">
 <description>Battery Holder (Open) Coin, 20.0mm 1 Cell SMD (SMT) Tab</description>
@@ -2099,6 +2098,11 @@
 <package3d name="MOUNTING_HOLE_3MM" urn="urn:adsk.eagle:package:25316982/2" type="model">
 <packageinstances>
 <packageinstance name="MOUNTING_HOLE_3MM"/>
+</packageinstances>
+</package3d>
+<package3d name="NIXIE-IN-8-2" urn="urn:adsk.eagle:package:25351611/2" type="model">
+<packageinstances>
+<packageinstance name="NIXIE-IN-8-2"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2166,6 +2170,9 @@
 <connect gate="A" pin="K9" pad="10"/>
 <connect gate="A" pin="KD" pad="8"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25351611/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2783,10 +2790,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C2" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C3" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
 <part name="C4" library="Capacitors" deviceset="C0603C103K5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V"/>
-<part name="Q1" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q2" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q3" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
-<part name="Q4" library="Misc" deviceset="NIXIE-IN-8-2" device=""/>
+<part name="Q1" library="Misc" deviceset="NIXIE-IN-8-2" device="" package3d_urn="urn:adsk.eagle:package:25351611/2"/>
+<part name="Q2" library="Misc" deviceset="NIXIE-IN-8-2" device="" package3d_urn="urn:adsk.eagle:package:25351611/2"/>
+<part name="Q3" library="Misc" deviceset="NIXIE-IN-8-2" device="" package3d_urn="urn:adsk.eagle:package:25351611/2"/>
+<part name="Q4" library="Misc" deviceset="NIXIE-IN-8-2" device="" package3d_urn="urn:adsk.eagle:package:25351611/2"/>
 <part name="S1" library="Supplies" deviceset="3V3" device=""/>
 <part name="S2" library="Supplies" deviceset="3V3" device=""/>
 <part name="S3" library="Supplies" deviceset="3V3" device=""/>
@@ -2838,13 +2845,13 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S36" library="Supplies" deviceset="3V3" device=""/>
 <part name="S37" library="Supplies" deviceset="3V3" device=""/>
 <part name="Y1" library="ICs" deviceset="ABM8G-16.000MHZ-18-D2Y-T" device="" package3d_urn="urn:adsk.eagle:package:25022963/1" value="16 MHz"/>
-<part name="C9" library="Capacitors" deviceset="C0603C430J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="43p/50V"/>
-<part name="C10" library="Capacitors" deviceset="C0603C430J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="43p/50V"/>
+<part name="C9" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
+<part name="C10" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
 <part name="S38" library="Supplies" deviceset="GND" device=""/>
 <part name="S39" library="Supplies" deviceset="GND" device=""/>
 <part name="Y2" library="ICs" deviceset="ABS07AIG-32.768KHZ-1-T" device="" package3d_urn="urn:adsk.eagle:package:25206263/2" value="32.768 kHz"/>
-<part name="C11" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
-<part name="C12" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
+<part name="C11" library="Capacitors" deviceset="C0603C200J1GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="20p/50V"/>
+<part name="C12" library="Capacitors" deviceset="C0603C200J1GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="20p/50V"/>
 <part name="S40" library="Supplies" deviceset="GND" device=""/>
 <part name="S41" library="Supplies" deviceset="GND" device=""/>
 <part name="R1" library="Resistors" deviceset="CRCW06031M00FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="1M/1%"/>
