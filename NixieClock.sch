@@ -402,8 +402,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="C0603C300J5GACTU" prefix="C">
-<description>SMT Capacitor, 30p/50V, C0G/NP0, ±5%, 0603, KEMET</description>
+<deviceset name="C0603C120J5GACTU" prefix="C">
+<description>SMT Capacitor, 12p/50V, C0G/NP0, ±5%, 0603, KEMET</description>
 <gates>
 <gate name="A" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -421,8 +421,8 @@
 <attribute name="MANUFACTURER" value="KEMET" constant="no"/>
 <attribute name="PACKAGE" value="0603" constant="no"/>
 <attribute name="PARAMETER" value="C0G/NP0, ±5%" constant="no"/>
-<attribute name="PARTNUMBER" value="C0603C300J5GACTU" constant="no"/>
-<attribute name="VALUE" value="30p/50V" constant="no"/>
+<attribute name="PARTNUMBER" value="C0603C120J5GACTU" constant="no"/>
+<attribute name="VALUE" value="12p/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -662,42 +662,6 @@
 <text x="0" y="2.6436" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.2036" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="OSCCC320X250X100N" urn="urn:adsk.eagle:footprint:25023039/1">
-<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
-&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
-<circle x="-2.3599" y="-0.95" radius="0.25" width="0" layer="21"/>
-<wire x1="-1.9159" y1="0.1401" x2="-1.9159" y2="-0.1401" width="0.12" layer="21"/>
-<wire x1="1.9159" y1="0.1401" x2="1.9159" y2="-0.1401" width="0.12" layer="21"/>
-<wire x1="-0.2901" y1="1.5659" x2="0.2901" y2="1.5659" width="0.12" layer="21"/>
-<wire x1="-0.2901" y1="-1.5659" x2="0.2901" y2="-1.5659" width="0.12" layer="21"/>
-<wire x1="1.65" y1="-1.3" x2="-1.65" y2="-1.3" width="0.12" layer="51"/>
-<wire x1="-1.65" y1="-1.3" x2="-1.65" y2="1.3" width="0.12" layer="51"/>
-<wire x1="-1.65" y1="1.3" x2="1.65" y2="1.3" width="0.12" layer="51"/>
-<wire x1="1.65" y1="1.3" x2="1.65" y2="-1.3" width="0.12" layer="51"/>
-<smd name="1" x="-1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
-<smd name="2" x="1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
-<smd name="3" x="1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
-<smd name="4" x="-1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
-<text x="0" y="2.2009" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.2009" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="OSCCC320X150X90N" urn="urn:adsk.eagle:footprint:25206281/2">
-<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
-&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
-<circle x="-2.3099" y="-0.4625" radius="0.25" width="0" layer="21"/>
-<wire x1="-1.8659" y1="-0.3099" x2="-1.8659" y2="0.3099" width="0.12" layer="21"/>
-<wire x1="1.8659" y1="-0.3099" x2="1.8659" y2="0.3099" width="0.12" layer="21"/>
-<wire x1="-0.4651" y1="1.0409" x2="0.4651" y2="1.0409" width="0.12" layer="21"/>
-<wire x1="-0.4651" y1="-1.0409" x2="0.4651" y2="-1.0409" width="0.12" layer="21"/>
-<wire x1="1.7" y1="-0.825" x2="-1.7" y2="-0.825" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="-0.825" x2="-1.7" y2="0.825" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="0.825" x2="1.7" y2="0.825" width="0.12" layer="51"/>
-<wire x1="1.7" y1="0.825" x2="1.7" y2="-0.825" width="0.12" layer="51"/>
-<smd name="1" x="-1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
-<smd name="2" x="1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
-<text x="0" y="1.6759" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.6759" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 <package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:25040649/1">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
@@ -751,20 +715,6 @@
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT95P240X110-3N"/>
-</packageinstances>
-</package3d>
-<package3d name="OSCCC320X250X100N" urn="urn:adsk.eagle:package:25022963/1" type="model">
-<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
-&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="OSCCC320X250X100N"/>
-</packageinstances>
-</package3d>
-<package3d name="OSCCC320X150X90N" urn="urn:adsk.eagle:package:25206263/2" type="model">
-<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
-&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="OSCCC320X150X90N"/>
 </packageinstances>
 </package3d>
 <package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:25040621/2" type="model">
@@ -924,19 +874,6 @@
 <text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-10.16" y="-10.16" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
-</symbol>
-<symbol name="XTAL">
-<pin name="1" x="-5.08" y="0" visible="pad" length="short"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="2.54" x2="-1.778" y2="2.54" width="0.1524" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-4.318" size="1.27" layer="95">&gt;VALUE</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
 </symbol>
 <symbol name="MAX1771">
 <pin name="EXT" x="17.78" y="5.08" length="short" direction="out" rot="R180"/>
@@ -1181,58 +1118,6 @@
 <attribute name="MANUFACTURER" value="Microchip" constant="no"/>
 <attribute name="PACKAGE" value="SOT23" constant="no"/>
 <attribute name="PARTNUMBER" value="MCP111T-300E/TT" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABM8G-16.000MHZ-18-D2Y-T" prefix="Y">
-<description>SMT Crystal, 16 MHz, SMD, 3.2mm x 2.5mm, 30 ppm, 18 pF, 20 ppm</description>
-<gates>
-<gate name="A" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OSCCC320X250X100N">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25022963/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
-<attribute name="PACKAGE" value="SMD-4 3.2x2.5" constant="no"/>
-<attribute name="PARAMETER" value="±20ppm, 18pF" constant="no"/>
-<attribute name="PARTNUMBER" value="ABM8G-16.000MHZ-18-D2Y-T" constant="no"/>
-<attribute name="VALUE" value="16 MHz" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABS07AIG-32.768KHZ-1-T" prefix="Y">
-<description>SMT Crystal, 32.768 kHz, SMD, 3.2mm x 1.5mm, 12.5 pF, 10 ppm</description>
-<gates>
-<gate name="A" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OSCCC320X150X90N">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25206263/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
-<attribute name="PACKAGE" value="SMD 3.2x1.5" constant="no"/>
-<attribute name="PARAMETER" value="±10 ppm, 12.5 pF" constant="no"/>
-<attribute name="PARTNUMBER" value="ABS07AIG-32.768KHZ-1-T" constant="no"/>
-<attribute name="VALUE" value="32.768 kHz" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1518,7 +1403,7 @@
 </devices>
 </deviceset>
 <deviceset name="ERJ8CWFR050V" prefix="R">
-<description>SMD Current Sense Resistor, 0.05/1%, 1 W, 1206 [3216], Panasonic</description>
+<description>SMD Current Sense Resistor, 0R05/1%, 1 W, 1206 [3216], Panasonic</description>
 <gates>
 <gate name="A" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -1700,6 +1585,32 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRCW06032K00FKEA" prefix="R">
+<description>SMT Resistor, 2k/1%, 100mW, 0603, VISHAY</description>
+<gates>
+<gate name="A" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC1608X50N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24925614/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="VISHAY" constant="no"/>
+<attribute name="PACKAGE" value="0603" constant="no"/>
+<attribute name="PARAMETER" value="100mW" constant="no"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" constant="no"/>
+<attribute name="VALUE" value="2k/1%" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Diodes">
@@ -1749,7 +1660,7 @@
 <text x="0" y="1.585" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.585" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CLX6E-FKC" urn="urn:adsk.eagle:footprint:25332397/1">
+<package name="CLX6E-FKC" urn="urn:adsk.eagle:footprint:25332397/6">
 <description>Cree PLCC6 3 in 1 SMD LED CLX6E-FKC, 3.5 x 3.4 x 2.8</description>
 <smd name="1" x="-1.375" y="1" dx="1.27" dy="0.635" layer="1"/>
 <smd name="2" x="-1.375" y="0" dx="1.27" dy="0.635" layer="1"/>
@@ -1765,6 +1676,8 @@
 <wire x1="-1.8" y1="-1.8" x2="1.8" y2="-1.8" width="0.127" layer="21"/>
 <text x="0" y="2.2" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.4" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+<circle x="-2.4" y="1.9" radius="0.25" width="0" layer="51"/>
+<circle x="-2.4" y="1.9" radius="0.25" width="0" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -1789,7 +1702,7 @@
 <packageinstance name="SODFL3517X110N"/>
 </packageinstances>
 </package3d>
-<package3d name="CLX6E-FKC" urn="urn:adsk.eagle:package:25332398/2" type="model">
+<package3d name="CLX6E-FKC" urn="urn:adsk.eagle:package:25332398/7" type="model">
 <description>Cree PLCC6 3 in 1 SMD LED CLX6E-FKC, 3.5 x 3.4 x 2.8</description>
 <packageinstances>
 <packageinstance name="CLX6E-FKC"/>
@@ -2014,7 +1927,7 @@
 <connect gate="A" pin="CRED" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25332398/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25332398/7"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -2766,6 +2679,131 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Crystals">
+<packages>
+<package name="OSCCC320X150X90N" urn="urn:adsk.eagle:footprint:25206281/2">
+<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
+<circle x="-2.3099" y="-0.4625" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.8659" y1="-0.3099" x2="-1.8659" y2="0.3099" width="0.12" layer="21"/>
+<wire x1="1.8659" y1="-0.3099" x2="1.8659" y2="0.3099" width="0.12" layer="21"/>
+<wire x1="-0.4651" y1="1.0409" x2="0.4651" y2="1.0409" width="0.12" layer="21"/>
+<wire x1="-0.4651" y1="-1.0409" x2="0.4651" y2="-1.0409" width="0.12" layer="21"/>
+<wire x1="1.7" y1="-0.825" x2="-1.7" y2="-0.825" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="-0.825" x2="-1.7" y2="0.825" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="0.825" x2="1.7" y2="0.825" width="0.12" layer="51"/>
+<wire x1="1.7" y1="0.825" x2="1.7" y2="-0.825" width="0.12" layer="51"/>
+<smd name="1" x="-1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
+<smd name="2" x="1.3" y="0" dx="1.1" dy="1.8" layer="1"/>
+<text x="0" y="1.6759" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.6759" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="OSCCC320X250X100N" urn="urn:adsk.eagle:footprint:25023039/1">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
+<circle x="-2.3599" y="-0.95" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.9159" y1="0.1401" x2="-1.9159" y2="-0.1401" width="0.12" layer="21"/>
+<wire x1="1.9159" y1="0.1401" x2="1.9159" y2="-0.1401" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="1.5659" x2="0.2901" y2="1.5659" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="-1.5659" x2="0.2901" y2="-1.5659" width="0.12" layer="21"/>
+<wire x1="1.65" y1="-1.3" x2="-1.65" y2="-1.3" width="0.12" layer="51"/>
+<wire x1="-1.65" y1="-1.3" x2="-1.65" y2="1.3" width="0.12" layer="51"/>
+<wire x1="-1.65" y1="1.3" x2="1.65" y2="1.3" width="0.12" layer="51"/>
+<wire x1="1.65" y1="1.3" x2="1.65" y2="-1.3" width="0.12" layer="51"/>
+<smd name="1" x="-1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="2" x="1.2" y="-0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="3" x="1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<smd name="4" x="-1.2" y="0.95" dx="1.3118" dy="1.1118" layer="1"/>
+<text x="0" y="2.2009" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2009" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="OSCCC320X150X90N" urn="urn:adsk.eagle:package:25206263/2" type="model">
+<description>Oscillator Corner Concave, 3.20 X 1.50 X 0.90 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 1.50 X 0.90 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OSCCC320X150X90N"/>
+</packageinstances>
+</package3d>
+<package3d name="OSCCC320X250X100N" urn="urn:adsk.eagle:package:25022963/1" type="model">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 1.00 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 1.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OSCCC320X250X100N"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="XTAL">
+<pin name="1" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="-1.778" y2="2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-4.318" size="1.27" layer="95">&gt;VALUE</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="96" ratio="6" rot="SR0">&gt;PACKAGE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABS07AIG-32.768KHZ-1-T" prefix="Y">
+<description>SMT Crystal, 32.768 kHz, SMD, 3.2mm x 1.5mm, 12.5 pF, 10 ppm</description>
+<gates>
+<gate name="A" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSCCC320X150X90N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25206263/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
+<attribute name="PACKAGE" value="SMD 3.2x1.5" constant="no"/>
+<attribute name="PARAMETER" value="±10 ppm, 12.5 pF" constant="no"/>
+<attribute name="PARTNUMBER" value="ABS07AIG-32.768KHZ-1-T" constant="no"/>
+<attribute name="VALUE" value="32.768 kHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCSJK-7U-16.00-10-10-80-B-10" prefix="Y">
+<description>SMT Crystal, 16 MHz, SMD, 3.2mm x 2.5mm, 10 ppm, 10 pF, 10 ppm</description>
+<gates>
+<gate name="A" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSCCC320X250X100N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25022963/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="ABRACON" constant="no"/>
+<attribute name="PACKAGE" value="SMD-4 3.2x2.5" constant="no"/>
+<attribute name="PARAMETER" value="±10ppm, 10pF" constant="no"/>
+<attribute name="PARTNUMBER" value="MCSJK-7U-16.00-10-10-80-B-10" constant="no"/>
+<attribute name="VALUE" value="16 MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2851,12 +2889,12 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S35" library="Supplies" deviceset="GND" device=""/>
 <part name="S36" library="Supplies" deviceset="3V3" device=""/>
 <part name="S37" library="Supplies" deviceset="3V3" device=""/>
-<part name="Y1" library="ICs" deviceset="ABM8G-16.000MHZ-18-D2Y-T" device="" package3d_urn="urn:adsk.eagle:package:25022963/1" value="16 MHz"/>
-<part name="C9" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
-<part name="C10" library="Capacitors" deviceset="C0603C300J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="30p/50V"/>
+<part name="Y1" library="Crystals" deviceset="MCSJK-7U-16.00-10-10-80-B-10" device="" package3d_urn="urn:adsk.eagle:package:25022963/1" value="16 MHz"/>
+<part name="C9" library="Capacitors" deviceset="C0603C120J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="12p/50V"/>
+<part name="C10" library="Capacitors" deviceset="C0603C120J5GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="12p/50V"/>
 <part name="S38" library="Supplies" deviceset="GND" device=""/>
 <part name="S39" library="Supplies" deviceset="GND" device=""/>
-<part name="Y2" library="ICs" deviceset="ABS07AIG-32.768KHZ-1-T" device="" package3d_urn="urn:adsk.eagle:package:25206263/2" value="32.768 kHz"/>
+<part name="Y2" library="Crystals" deviceset="ABS07AIG-32.768KHZ-1-T" device="" package3d_urn="urn:adsk.eagle:package:25206263/2" value="32.768 kHz"/>
 <part name="C11" library="Capacitors" deviceset="C0603C200J1GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="20p/50V"/>
 <part name="C12" library="Capacitors" deviceset="C0603C200J1GACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="20p/50V"/>
 <part name="S40" library="Supplies" deviceset="GND" device=""/>
@@ -2921,10 +2959,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S62" library="Supplies" deviceset="GND" device=""/>
 <part name="IC9" library="ICs" deviceset="TLC5973" device="" package3d_urn="urn:adsk.eagle:package:25040621/2" value="TLC5973"/>
 <part name="IC10" library="ICs" deviceset="TLC5973" device="" package3d_urn="urn:adsk.eagle:package:25040621/2" value="TLC5973"/>
-<part name="LED1" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/2" value="CLX6E-FKC"/>
-<part name="LED2" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/2" value="CLX6E-FKC"/>
-<part name="LED3" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/2" value="CLX6E-FKC"/>
-<part name="LED4" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/2" value="CLX6E-FKC"/>
+<part name="LED1" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/7" value="CLX6E-FKC"/>
+<part name="LED2" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/7" value="CLX6E-FKC"/>
+<part name="LED3" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/7" value="CLX6E-FKC"/>
+<part name="LED4" library="Diodes" deviceset="CLX6E-FKC" device="" package3d_urn="urn:adsk.eagle:package:25332398/7" value="CLX6E-FKC"/>
 <part name="C5" library="Capacitors" deviceset="C0603C104M5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="100n/50V"/>
 <part name="C18" library="Capacitors" deviceset="C0603C104M5RACTU" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="100n/50V"/>
 <part name="R19" library="Resistors" deviceset="MCWR06X3301FTL" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="3k3/1%"/>
@@ -2947,6 +2985,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S74" library="Supplies" deviceset="GND" device=""/>
 <part name="S75" library="Supplies" deviceset="GND" device=""/>
 <part name="S76" library="Supplies" deviceset="GND" device=""/>
+<part name="R21" library="Resistors" deviceset="CRCW06032K00FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="2k/1%"/>
 </parts>
 <sheets>
 <sheet>
@@ -4448,6 +4487,12 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="S76" gate="A" x="-33.02" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-33.02" y="41.148" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="R21" gate="A" x="10.16" y="7.62" smashed="yes">
+<attribute name="NAME" x="10.16" y="9.017" size="1.27" layer="95"/>
+<attribute name="VALUE" x="10.16" y="4.953" size="1.27" layer="96"/>
+<attribute name="PARAMETER" x="10.16" y="3.683" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="12.7" y="7.62" size="1.016" layer="96" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4832,13 +4877,13 @@ DIN A3, landscape with location and doc. field</description>
 <net name="OSC1" class="0">
 <segment>
 <pinref part="C10" gate="A" pin="1"/>
-<pinref part="IC14" gate="A" pin="OSC1"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="A" pin="2"/>
 <wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 <junction x="5.08" y="2.54"/>
+<pinref part="R21" gate="A" pin="1"/>
+<wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XOSC0" class="0">
@@ -4922,6 +4967,13 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="IC14" gate="A" pin="PA1_U0TX"/>
 <wire x1="20.32" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="91"/>
 <label x="17.78" y="-2.54" size="1.27" layer="95" rot="MR0" align="center-left"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<pinref part="R21" gate="A" pin="2"/>
+<pinref part="IC14" gate="A" pin="OSC1"/>
+<wire x1="17.78" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
