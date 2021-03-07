@@ -1189,35 +1189,14 @@
 <text x="0" y="2.5841" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.5841" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="RESC2012X65N" urn="urn:adsk.eagle:footprint:24925698/1">
-<description>Chip, 2.00 X 1.25 X 0.65 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.25 X 0.65 mm&lt;/p&gt;</description>
-<wire x1="1.05" y1="1.0036" x2="-1.05" y2="1.0036" width="0.12" layer="21"/>
-<wire x1="1.05" y1="-1.0036" x2="-1.05" y2="-1.0036" width="0.12" layer="21"/>
-<wire x1="1.05" y1="-0.675" x2="-1.05" y2="-0.675" width="0.12" layer="51"/>
-<wire x1="-1.05" y1="-0.675" x2="-1.05" y2="0.675" width="0.12" layer="51"/>
-<wire x1="-1.05" y1="0.675" x2="1.05" y2="0.675" width="0.12" layer="51"/>
-<wire x1="1.05" y1="0.675" x2="1.05" y2="-0.675" width="0.12" layer="51"/>
-<smd name="1" x="-0.975" y="0" dx="0.8791" dy="1.3791" layer="1"/>
-<smd name="2" x="0.975" y="0" dx="0.8791" dy="1.3791" layer="1"/>
-<text x="0" y="1.6386" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.6386" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="T93YB" urn="urn:adsk.eagle:footprint:25133173/4">
-<description>3/8" Square TH Trimmer (9.5mm x 9.5mm x 4.8mm)</description>
-<pad name="1" x="-1.7" y="2.54" drill="0.7" diameter="1.3"/>
-<pad name="2" x="0.84" y="0" drill="0.7" diameter="1.3"/>
-<pad name="3" x="-1.7" y="-2.54" drill="0.7" diameter="1.3"/>
-<wire x1="-2.5" y1="4.85" x2="2.5" y2="4.85" width="0.127" layer="39"/>
-<wire x1="-2.5" y1="-4.85" x2="2.5" y2="-4.85" width="0.127" layer="39"/>
-<wire x1="-2.5" y1="4.85" x2="-2.5" y2="-4.85" width="0.127" layer="39"/>
-<wire x1="2.5" y1="4.85" x2="2.5" y2="-4.85" width="0.127" layer="39"/>
-<wire x1="-2.5" y1="4.85" x2="2.5" y2="4.85" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-4.85" x2="2.5" y2="-4.85" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="4.85" x2="-2.5" y2="-4.85" width="0.127" layer="21"/>
-<wire x1="2.5" y1="4.85" x2="2.5" y2="-4.85" width="0.127" layer="21"/>
-<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<package name="22A" urn="urn:adsk.eagle:footprint:27324313/1">
+<smd name="P$1" x="1.2" y="-1.45" dx="1.1" dy="1.6" layer="1"/>
+<smd name="P$2" x="0" y="1.45" dx="1.6" dy="1.6" layer="1"/>
+<smd name="P$3" x="-1.2" y="-1.45" dx="1.1" dy="1.6" layer="1"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<text x="-2.04" y="2.83" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.04" y="-4.17" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -1249,17 +1228,9 @@
 <packageinstance name="RESC6331X65N"/>
 </packageinstances>
 </package3d>
-<package3d name="RESC2012X65N" urn="urn:adsk.eagle:package:24925684/1" type="model">
-<description>Chip, 2.00 X 1.25 X 0.65 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.25 X 0.65 mm&lt;/p&gt;</description>
+<package3d name="22A" urn="urn:adsk.eagle:package:27324314/2" type="model">
 <packageinstances>
-<packageinstance name="RESC2012X65N"/>
-</packageinstances>
-</package3d>
-<package3d name="T93YB" urn="urn:adsk.eagle:package:25133174/5" type="model">
-<description>3/8" Square TH Trimmer (9.5mm x 9.5mm x 4.8mm)</description>
-<packageinstances>
-<packageinstance name="T93YB"/>
+<packageinstance name="22A"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1424,54 +1395,27 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ERJP06F9102V" prefix="R">
-<description>SMT Resistor, 91k, 1%, 500mW, 0805, Panasonic</description>
-<gates>
-<gate name="A" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESC2012X65N">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24925684/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="Panasonic" constant="no"/>
-<attribute name="PACKAGE" value="0805" constant="no"/>
-<attribute name="PARAMETER" value="500mW" constant="no"/>
-<attribute name="PARTNUMBER" value="ERJP06F9102V" constant="no"/>
-<attribute name="VALUE" value="91k/1%" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="T93YB502KT20" prefix="R">
-<description>Trimpot, 23 Turns, 5 kohm, Through Hole, Top Adjust, VISHAY</description>
+<deviceset name="22AR5K" prefix="R">
+<description>Trimpot, Single Turn, Cermet, Top Adjust, 5 kohm, Surface Mount, 1 Turns</description>
 <gates>
 <gate name="A" symbol="POTENTIOMETER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="T93YB">
+<device name="" package="22A">
 <connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="1" pad="P$1"/>
+<connect gate="A" pin="2" pad="P$2"/>
+<connect gate="A" pin="3" pad="P$3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25133174/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27324314/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="VISHAY" constant="no"/>
-<attribute name="PACKAGE" value="TH-3/8" constant="no"/>
+<attribute name="MANUFACTURER" value="TT ELECTRONICS / BI TECHNOL" constant="no"/>
+<attribute name="PACKAGE" value="3MM SMD" constant="no"/>
 <attribute name="PARAMETER" value="" constant="no"/>
-<attribute name="PARTNUMBER" value="T93YB502KT20" constant="no"/>
-<attribute name="VALUE" value="5k/10%" constant="no"/>
+<attribute name="VALUE" value="5k/20%" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1597,6 +1541,21 @@
 <circle x="-2.4" y="1.9" radius="0.25" width="0" layer="51"/>
 <circle x="-2.4" y="1.9" radius="0.25" width="0" layer="21"/>
 </package>
+<package name="SOD2512X110N" urn="urn:adsk.eagle:footprint:27323563/1">
+<description>SOD, 2.50 mm span, 1.70 X 1.25 X 1.10 mm body
+&lt;p&gt;SOD package with 2.50 mm span with body size 1.70 X 1.25 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="0.9" y1="0.675" x2="-2.0217" y2="0.675" width="0.12" layer="21"/>
+<wire x1="-2.0217" y1="0.675" x2="-2.0217" y2="-0.675" width="0.12" layer="21"/>
+<wire x1="-2.0217" y1="-0.675" x2="0.9" y2="-0.675" width="0.12" layer="21"/>
+<wire x1="0.9" y1="-0.675" x2="-0.9" y2="-0.675" width="0.12" layer="51"/>
+<wire x1="-0.9" y1="-0.675" x2="-0.9" y2="0.675" width="0.12" layer="51"/>
+<wire x1="-0.9" y1="0.675" x2="0.9" y2="0.675" width="0.12" layer="51"/>
+<wire x1="0.9" y1="0.675" x2="0.9" y2="-0.675" width="0.12" layer="51"/>
+<smd name="1" x="-1.1783" y="0" dx="1.0588" dy="0.4971" layer="1"/>
+<smd name="2" x="1.1783" y="0" dx="1.0588" dy="0.4971" layer="1"/>
+<text x="0" y="1.31" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.31" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOD3716X135N" urn="urn:adsk.eagle:package:24873530/1" type="model">
@@ -1624,6 +1583,13 @@
 <description>Cree PLCC6 3 in 1 SMD LED CLX6E-FKC, 3.5 x 3.4 x 2.8</description>
 <packageinstances>
 <packageinstance name="CLX6E-FKC"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD2512X110N" urn="urn:adsk.eagle:package:27323520/1" type="model">
+<description>SOD, 2.50 mm span, 1.70 X 1.25 X 1.10 mm body
+&lt;p&gt;SOD package with 2.50 mm span with body size 1.70 X 1.25 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD2512X110N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1854,6 +1820,32 @@
 <attribute name="PARAMETER" value="" constant="no"/>
 <attribute name="PARTNUMBER" value="CLX6E-FKC-CH1M1D1BB7C3D3" constant="no"/>
 <attribute name="VALUE" value="CLX6E-FKC" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAS321" prefix="D">
+<description>Small Signal Diode, 250 V, 250 mA, 1.25 V, 50 ns, 9 A</description>
+<gates>
+<gate name="A" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD2512X110N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27323520/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="NEXPERIA" constant="no"/>
+<attribute name="PACKAGE" value="SOD-323" constant="no"/>
+<attribute name="PARAMETER" value="250V, 250mA" constant="no"/>
+<attribute name="PARTNUMBER" value="BAS321/8F" constant="no"/>
+<attribute name="VALUE" value="BAS321" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2460,26 +2452,6 @@ DIN A3, landscape with location and doc. field</description>
 <vertex x="2.54" y="-2.54"/>
 </polygon>
 </symbol>
-<symbol name="PNP-BJT">
-<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
-<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
-<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
-<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="3.556" y="-0.508" size="1.27" layer="96">&gt;VALUE</text>
-<text x="3.556" y="1.524" size="1.27" layer="95">&gt;NAME</text>
-<text x="3.556" y="-2.54" size="1.27" layer="96">&gt;PACKAGE</text>
-</symbol>
 <symbol name="N-MOSFET">
 <wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
@@ -2520,31 +2492,6 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BF821" prefix="Q">
-<description>PNP Transistor, Bipolar (BJT), -300 V, 50 mA, 250 mW, SOT-23, NEXPERIA</description>
-<gates>
-<gate name="A" symbol="PNP-BJT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P230X110-3N">
-<connects>
-<connect gate="A" pin="B" pad="1"/>
-<connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="E" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25234754/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="NEXPERIA" constant="no"/>
-<attribute name="PACKAGE" value="SOT-23" constant="no"/>
-<attribute name="PARTNUMBER" value="BF821" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FQD16N25CTM" prefix="Q">
 <description>Power MOSFET, N Channel, 250 V, 16 A, 0.22 ohm, TO-252 (DPAK), Surface Mount</description>
 <gates>
@@ -2826,8 +2773,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C14" library="Capacitors" deviceset="ECA2EHG4R7" device="" package3d_urn="urn:adsk.eagle:package:25094486/1" value="4u7/250V"/>
 <part name="IC13" library="ICs" deviceset="MAX1771ESA+" device="" package3d_urn="urn:adsk.eagle:package:25040621/2"/>
 <part name="L1" library="Inductors" deviceset="MCSDRH125B-101MHF" device="" package3d_urn="urn:adsk.eagle:package:25094357/1"/>
-<part name="Q5" library="Transistors" deviceset="BF820" device="" package3d_urn="urn:adsk.eagle:package:25234754/1"/>
-<part name="Q6" library="Transistors" deviceset="BF821" device="" package3d_urn="urn:adsk.eagle:package:25234754/1"/>
 <part name="Q7" library="Transistors" deviceset="FQD16N25CTM" device="" package3d_urn="urn:adsk.eagle:package:25093642/2"/>
 <part name="R2" library="Resistors" deviceset="ERJ8CWFR050V" device="" package3d_urn="urn:adsk.eagle:package:24925716/1" value="0R05/1%"/>
 <part name="S46" library="Supplies" deviceset="12V" device=""/>
@@ -2846,17 +2791,13 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S54" library="Supplies" deviceset="GND" device=""/>
 <part name="S55" library="Supplies" deviceset="GND" device=""/>
 <part name="S56" library="Supplies" deviceset="12V" device=""/>
-<part name="R8" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
 <part name="S57" library="Supplies" deviceset="HV" device=""/>
-<part name="R9" library="Resistors" deviceset="ERJP06F9102V" device="" package3d_urn="urn:adsk.eagle:package:24925684/1" value="91k/1%"/>
-<part name="R14" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
-<part name="S58" library="Supplies" deviceset="GND" device=""/>
-<part name="R16" library="Resistors" deviceset="T93YB502KT20" device="" package3d_urn="urn:adsk.eagle:package:25133174/5" value="5k/10%"/>
+<part name="R16" library="Resistors" deviceset="22AR5K" device="" package3d_urn="urn:adsk.eagle:package:27324314/2" value="5k/20%"/>
 <part name="S59" library="Supplies" deviceset="3V3" device=""/>
 <part name="Q8" library="Transistors" deviceset="BF820" device="" package3d_urn="urn:adsk.eagle:package:25234754/1"/>
-<part name="R17" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
+<part name="R17" library="Resistors" deviceset="CRCW060310K0FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%"/>
 <part name="S10" library="Supplies" deviceset="GND" device=""/>
-<part name="R18" library="Resistors" deviceset="CRCW0603100KFKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%"/>
+<part name="R18" library="Resistors" deviceset="CRCW060310K0FKEA" device="" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%"/>
 <part name="MT1" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
 <part name="MT2" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
 <part name="MT3" library="Misc" deviceset="MOUNTING_HOLE_3MM" device="" package3d_urn="urn:adsk.eagle:package:25316982/2"/>
@@ -2900,6 +2841,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="S35" library="Supplies" deviceset="GND" device=""/>
 <part name="C7" library="Capacitors" deviceset="CL10A105KA8NNNC" device="" package3d_urn="urn:adsk.eagle:package:25020390/1" value="1u/25V"/>
 <part name="S36" library="Supplies" deviceset="GND" device=""/>
+<part name="D4" library="Diodes" deviceset="BAS321" device="" package3d_urn="urn:adsk.eagle:package:27323520/1" value="BAS321"/>
 </parts>
 <sheets>
 <sheet>
@@ -3184,6 +3126,11 @@ DIN A3, landscape with location and doc. field</description>
 </instance>
 <instance part="S72" gate="A" x="139.7" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="139.7" y="-3.302" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D4" gate="A" x="-71.12" y="-81.28" smashed="yes">
+<attribute name="NAME" x="-73.66" y="-79.248" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-73.66" y="-84.328" size="1.27" layer="96"/>
+<attribute name="PACKAGE" x="-73.66" y="-86.106" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3565,6 +3512,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="IC2" gate="A" pin="COM"/>
 <wire x1="-71.12" y1="33.02" x2="-68.58" y2="33.02" width="0.1524" layer="91"/>
 <label x="-68.58" y="33.02" size="1.27" layer="95" rot="MR0" align="center-right"/>
+</segment>
+<segment>
+<pinref part="D4" gate="A" pin="1"/>
+<wire x1="-68.58" y1="-81.28" x2="-63.5" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-63.5" y="-81.28" size="1.27" layer="95" align="center-left"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -3982,11 +3934,15 @@ DIN A3, landscape with location and doc. field</description>
 <net name="N$68" class="0">
 <segment>
 <pinref part="Q8" gate="A" pin="C"/>
-<wire x1="-83.82" y1="-86.36" x2="-83.82" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-86.36" x2="-83.82" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-81.28" x2="-83.82" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-73.66" x2="-33.02" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="A" pin="K0"/>
 <wire x1="-33.02" y1="-73.66" x2="-33.02" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-35.56" x2="-22.86" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="D4" gate="A" pin="2"/>
+<wire x1="-73.66" y1="-81.28" x2="-83.82" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="-83.82" y="-81.28"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -4894,16 +4850,6 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="VALUE" x="-33.02" y="25.908" size="1.27" layer="95"/>
 <attribute name="PACKAGE" x="-30.48" y="24.13" size="1.27" layer="95"/>
 </instance>
-<instance part="Q5" gate="A" x="76.2" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="79.756" y="-10.668" size="1.27" layer="96"/>
-<attribute name="NAME" x="79.756" y="-8.636" size="1.27" layer="95"/>
-<attribute name="PACKAGE" x="79.756" y="-12.7" size="1.27" layer="96"/>
-</instance>
-<instance part="Q6" gate="A" x="78.74" y="25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="74.168" y="31.496" size="1.27" layer="96"/>
-<attribute name="NAME" x="74.676" y="34.036" size="1.27" layer="95"/>
-<attribute name="PACKAGE" x="73.66" y="28.956" size="1.27" layer="96"/>
-</instance>
 <instance part="Q7" gate="A" x="-15.24" y="15.24" smashed="yes">
 <attribute name="VALUE" x="-10.16" y="14.732" size="1.27" layer="96"/>
 <attribute name="NAME" x="-10.16" y="16.764" size="1.27" layer="95"/>
@@ -4975,29 +4921,8 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="S56" gate="A" x="-99.06" y="20.32" smashed="yes">
 <attribute name="VALUE" x="-99.06" y="24.638" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R8" gate="A" x="68.58" y="17.78" smashed="yes">
-<attribute name="NAME" x="68.58" y="19.177" size="1.27" layer="95"/>
-<attribute name="VALUE" x="68.58" y="15.113" size="1.27" layer="96"/>
-<attribute name="PARAMETER" x="68.58" y="13.843" size="1.016" layer="96"/>
-<attribute name="PACKAGE" x="71.12" y="17.78" size="1.016" layer="96" align="center"/>
-</instance>
-<instance part="S57" gate="A" x="96.52" y="33.02" smashed="yes">
-<attribute name="VALUE" x="96.52" y="37.338" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R9" gate="A" x="78.74" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="77.343" y="5.08" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="81.407" y="5.08" size="1.27" layer="96" rot="R90"/>
-<attribute name="PARAMETER" x="82.677" y="5.08" size="1.016" layer="96" rot="R90"/>
-<attribute name="PACKAGE" x="78.74" y="7.62" size="1.016" layer="96" rot="R90" align="center"/>
-</instance>
-<instance part="R14" gate="A" x="63.5" y="-10.16" smashed="yes">
-<attribute name="NAME" x="63.5" y="-8.763" size="1.27" layer="95"/>
-<attribute name="VALUE" x="63.5" y="-12.827" size="1.27" layer="96"/>
-<attribute name="PARAMETER" x="63.5" y="-14.097" size="1.016" layer="96"/>
-<attribute name="PACKAGE" x="66.04" y="-10.16" size="1.016" layer="96" align="center"/>
-</instance>
-<instance part="S58" gate="A" x="78.74" y="-17.78" smashed="yes">
-<attribute name="VALUE" x="78.74" y="-22.352" size="1.27" layer="96" align="bottom-center"/>
+<instance part="S57" gate="A" x="38.1" y="33.02" smashed="yes">
+<attribute name="VALUE" x="38.1" y="37.338" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="R16" gate="A" x="30.48" y="5.08" smashed="yes">
 <attribute name="NAME" x="28.956" y="6.477" size="1.27" layer="95" rot="MR0"/>
@@ -5035,26 +4960,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="D2" gate="A" pin="2"/>
 <wire x1="-2.54" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-12.7" y="27.94"/>
-</segment>
-</net>
-<net name="PRE_HV" class="0">
-<segment>
-<pinref part="D2" gate="A" pin="1"/>
-<pinref part="C14" gate="A" pin="1"/>
-<wire x1="2.54" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R6" gate="A" pin="2"/>
-<wire x1="30.48" y1="25.4" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<junction x="12.7" y="27.94"/>
-<pinref part="Q6" gate="A" pin="E"/>
-<junction x="30.48" y="27.94"/>
-<wire x1="73.66" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R8" gate="A" pin="1"/>
-<wire x1="63.5" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="17.78" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<junction x="63.5" y="27.94"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -5133,50 +5038,21 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="C17" gate="A" pin="2"/>
 <wire x1="-88.9" y1="-17.78" x2="-88.9" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="S58" gate="A" pin="GND"/>
-<pinref part="Q5" gate="A" pin="E"/>
-<wire x1="78.74" y1="-17.78" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$78" class="0">
-<segment>
-<pinref part="R8" gate="A" pin="2"/>
-<pinref part="Q6" gate="A" pin="B"/>
-<wire x1="76.2" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="17.78" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R9" gate="A" pin="2"/>
-<wire x1="78.74" y1="12.7" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
-<junction x="78.74" y="17.78"/>
-</segment>
 </net>
 <net name="HV" class="0">
 <segment>
-<pinref part="Q6" gate="A" pin="C"/>
 <pinref part="S57" gate="A" pin="HV"/>
-<wire x1="83.82" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="27.94" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$79" class="0">
-<segment>
-<pinref part="Q5" gate="A" pin="C"/>
-<pinref part="R9" gate="A" pin="1"/>
-<wire x1="78.74" y1="-5.08" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$80" class="0">
-<segment>
-<pinref part="R14" gate="A" pin="2"/>
-<pinref part="Q5" gate="A" pin="B"/>
-<wire x1="71.12" y1="-10.16" x2="73.66" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MCU_PWM" class="0">
-<segment>
-<pinref part="R14" gate="A" pin="1"/>
-<wire x1="60.96" y1="-10.16" x2="55.88" y2="-10.16" width="0.1524" layer="91"/>
-<label x="55.88" y="-10.16" size="1.27" layer="95" rot="MR0" align="center-left"/>
+<wire x1="38.1" y1="27.94" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="D2" gate="A" pin="1"/>
+<pinref part="C14" gate="A" pin="1"/>
+<wire x1="2.54" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="27.94" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R6" gate="A" pin="2"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<junction x="12.7" y="27.94"/>
+<wire x1="30.48" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<junction x="30.48" y="27.94"/>
 </segment>
 </net>
 <net name="N$81" class="0">
