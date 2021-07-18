@@ -73,7 +73,7 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDBmOTQ3" projecturn="a.cGVyc29uYWw6dWUyZDBmOTQ3IzIwMjAxMjA3MzYwNDYyNDA2" f3durn="urn:adsk.wipprod:dm.lineage:BXxHTF-7TQ6Wis42wU4rbQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="4f33e7d3-4ce6-4bcd-a8ca-e06f98fe40f0" lastsyncedrevisionid="4f33e7d3-4ce6-4bcd-a8ca-e06f98fe40f0" lastboardhashguid="efef6d61-5754-ec73-e86c-f15276ac9c08" lastpushedtime="2021-03-09T21:39:53Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDBmOTQ3" projecturn="a.cGVyc29uYWw6dWUyZDBmOTQ3IzIwMjAxMjA3MzYwNDYyNDA2" f3durn="urn:adsk.wipprod:dm.lineage:BXxHTF-7TQ6Wis42wU4rbQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="18f7d072-b3fd-4403-8dac-70bc5c55b90d" lastsyncedrevisionid="18f7d072-b3fd-4403-8dac-70bc5c55b90d" lastboardhashguid="8a69f7a0-0787-e5ca-5907-b7e76133a0e4" lastpushedtime="2021-05-01T20:58:40Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="134" y2="0" width="0" layer="20"/>
 <wire x1="134" y1="0" x2="134" y2="45" width="0" layer="20"/>
@@ -1160,13 +1160,13 @@ design rules under a new name.</description>
 <attribute name="PARTNUMBER" value="C0603C200J1GACTU" x="86.61" y="-106.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="20p/50V" x="51.05" y="5.1364" size="0.4" layer="27" ratio="10" align="bottom-center"/>
 </element>
-<element name="C13" library="Capacitors" package="CAPPRD350W60D800H1150B" package3d_urn="urn:adsk.eagle:package:25094486/1" value="470u/16V" x="21" y="9.75" smashed="yes">
-<attribute name="MANUFACTURER" value="Panasonic" x="89.58" y="-48.67" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="25.55" y="11.885" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="Radial 8x11.5" x="89.58" y="-48.67" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="Alu, 20%" x="89.58" y="-48.67" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="ECA1CM471" x="89.58" y="-48.67" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="21" y="11.015" size="0.4" layer="27" ratio="10" align="bottom-center"/>
+<element name="C13" library="Capacitors" package="CAPPRD350W60D800H1150B" package3d_urn="urn:adsk.eagle:package:25094486/1" value="470u/16V" x="21" y="9.75" smashed="yes" rot="R325">
+<attribute name="MANUFACTURER" value="Panasonic" x="43.669109375" y="-77.44073125" size="1.778" layer="27" rot="R325" display="off"/>
+<attribute name="NAME" x="25.451721875" y="11.889115625" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="Radial 8x11.5" x="43.669109375" y="-77.44073125" size="1.778" layer="27" rot="R325" display="off"/>
+<attribute name="PARAMETER" value="Alu, 20%" x="43.669109375" y="-77.44073125" size="1.778" layer="27" rot="R325" display="off"/>
+<attribute name="PARTNUMBER" value="ECA1CM471" x="43.669109375" y="-77.44073125" size="1.778" layer="27" rot="R325" display="off"/>
+<attribute name="VALUE" x="21.72556875" y="10.786225" size="0.4" layer="27" ratio="10" rot="R325" align="bottom-center"/>
 </element>
 <element name="C14" library="Capacitors" package="CAPPRD350W60D800H1150B" package3d_urn="urn:adsk.eagle:package:25094486/1" value="4u7/250V" x="10" y="36" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Panasonic" x="68.42" y="113.47" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1178,7 +1178,7 @@ design rules under a new name.</description>
 </element>
 <element name="C15" library="Capacitors" package="CAPC1608X80N" package3d_urn="urn:adsk.eagle:package:25020390/1" value="100n/50V" x="19.5" y="29.25" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="KEMET" x="122.37" y="90.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="21.51" y="28.83" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="19.01" y="31.33" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="0603" x="122.37" y="90.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PARAMETER" value="X7R, 20%" x="122.37" y="90.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PARTNUMBER" value="C0603C104M5RACTU" x="122.37" y="90.21" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1309,28 +1309,28 @@ design rules under a new name.</description>
 </element>
 <element name="IC5" library="ICs" package="SOIC127P600X175-16N" package3d_urn="urn:adsk.eagle:package:24873557/2" value="SN74HC595DR" x="90.96" y="8" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="17.3" y="-44.07" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="90.2274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="89.7274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="SOIC-16" x="17.3" y="-44.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNUMBER" value="SN74HC595DR" x="90.96" y="8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="90.9326" y="7.8" size="0.4" layer="27" ratio="10" align="bottom-center"/>
 </element>
 <element name="IC6" library="ICs" package="SOIC127P600X175-16N" package3d_urn="urn:adsk.eagle:package:24873557/2" value="SN74HC595DR" x="79.96" y="8" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="6.3" y="-59.31" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="79.2274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="78.7274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="SOIC-16" x="6.3" y="-59.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNUMBER" value="SN74HC595DR" x="79.96" y="8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="79.9326" y="7.8" size="0.4" layer="27" ratio="10" align="bottom-center"/>
 </element>
 <element name="IC7" library="ICs" package="SOIC127P600X175-16N" package3d_urn="urn:adsk.eagle:package:24873557/2" value="SN74HC595DR" x="68.96" y="8" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="-4.7" y="-74.55" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="68.2274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="67.7274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="SOIC-16" x="-4.7" y="-74.55" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNUMBER" value="SN74HC595DR" x="68.96" y="8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="68.9326" y="7.8" size="0.4" layer="27" ratio="10" align="bottom-center"/>
 </element>
 <element name="IC8" library="ICs" package="SOIC127P600X175-16N" package3d_urn="urn:adsk.eagle:package:24873557/2" value="SN74HC595DR" x="57.96" y="8" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="-15.7" y="-89.79" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="57.2274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="55.2274" y="3.2" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="SOIC-16" x="-15.7" y="-89.79" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PARTNUMBER" value="SN74HC595DR" x="57.96" y="8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="57.9326" y="7.8" size="0.4" layer="27" ratio="10" align="bottom-center"/>
@@ -1478,7 +1478,7 @@ design rules under a new name.</description>
 </element>
 <element name="R6" library="Resistors" package="RESC6331X65N" package3d_urn="urn:adsk.eagle:package:25111196/1" value="1.5M/1%" x="22.25" y="30.5" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="MULTICOMP PRO" x="107.34" y="88.92" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="24.5" y="30.45" size="0.8" layer="25" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="25" y="32.95" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="2512" x="107.34" y="88.92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARAMETER" value="1.5W" x="107.34" y="88.92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNUMBER" value="MCPWR12FTEA1504" x="107.34" y="88.92" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1718,69 +1718,77 @@ design rules under a new name.</description>
 <attribute name="PARTNUMBER" value="CRCW060333R0FKEA" x="121.5" y="5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="120.0864" y="5" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R9" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="102.25" y="16.25" smashed="yes">
-<attribute name="MANUFACTURER" value="VISHAY" x="102.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="102.25" y="14.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="102.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="100mW" x="102.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="102.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="102.25" y="14.8364" size="1.27" layer="27" align="top-center"/>
+<element name="R9" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="102.25" y="16.25" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="VISHAY" x="102.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="102.25" y="20.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="102.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="102.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="102.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="102.25" y="17.6636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="R14" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="102.25" y="17.75" smashed="yes">
-<attribute name="MANUFACTURER" value="VISHAY" x="102.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="102.25" y="18.9136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="102.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="100mW" x="102.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="102.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="102.25" y="16.3364" size="1.27" layer="27" align="top-center"/>
+<element name="R14" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="102.25" y="17.75" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="VISHAY" x="102.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="102.25" y="21.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="102.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="102.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="102.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="102.25" y="19.1636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="R22" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="106.25" y="16.25" smashed="yes">
-<attribute name="MANUFACTURER" value="VISHAY" x="106.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="106.25" y="20.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="106.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="100mW" x="106.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="106.25" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="106.25" y="14.8364" size="1.27" layer="27" align="top-center"/>
+<element name="R22" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="106.25" y="16.25" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="VISHAY" x="106.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="106.25" y="20.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="106.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="106.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="106.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="106.25" y="17.6636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="R23" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="106.25" y="17.75" smashed="yes">
-<attribute name="MANUFACTURER" value="VISHAY" x="106.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="106.25" y="21.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="106.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="100mW" x="106.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="106.25" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="106.25" y="16.3364" size="1.27" layer="27" align="top-center"/>
+<element name="R23" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="106.25" y="17.75" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="VISHAY" x="106.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="106.25" y="21.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="106.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="106.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="106.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="106.25" y="19.1636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="C24" library="Capacitors" package="CAPC1608X80N" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V" x="109" y="16.25" smashed="yes">
-<attribute name="MANUFACTURER" value="KEMET" x="109" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="109" y="20.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="109" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="X7R, 10%" x="109" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="C0603C103K5RACTU" x="109" y="16.25" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="109" y="14.8364" size="1.27" layer="27" align="top-center"/>
+<element name="C24" library="Capacitors" package="CAPC1608X80N" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V" x="110.25" y="16.25" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="KEMET" x="110.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="110.25" y="20.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="110.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="X7R, 10%" x="110.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="C0603C103K5RACTU" x="110.25" y="16.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="110.25" y="17.6636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="C25" library="Capacitors" package="CAPC1608X80N" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V" x="109" y="17.75" smashed="yes">
-<attribute name="MANUFACTURER" value="KEMET" x="109" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="109" y="21.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="109" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="X7R, 10%" x="109" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="C0603C103K5RACTU" x="109" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="109" y="16.3364" size="1.27" layer="27" align="top-center"/>
+<element name="C25" library="Capacitors" package="CAPC1608X80N" package3d_urn="urn:adsk.eagle:package:25020390/1" value="10n/50V" x="110.25" y="17.75" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="KEMET" x="110.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="110.25" y="21.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="110.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARAMETER" value="X7R, 10%" x="110.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNUMBER" value="C0603C103K5RACTU" x="110.25" y="17.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="110.25" y="19.1636" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="R25" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%" x="109" y="19.25" smashed="yes">
-<attribute name="MANUFACTURER" value="VISHAY" x="109" y="19.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="109" y="22.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
-<attribute name="PACKAGE" value="0603" x="109" y="19.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARAMETER" value="100mW" x="109" y="19.25" size="1.778" layer="27" display="off"/>
-<attribute name="PARTNUMBER" value="CRCW0603100KFKEA" x="109" y="19.25" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="109" y="17.8364" size="1.27" layer="27" align="top-center"/>
-</element>
-<element name="R24" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%" x="106.25" y="19.25" smashed="yes">
+<element name="R25" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%" x="106.25" y="19.25" smashed="yes">
 <attribute name="MANUFACTURER" value="VISHAY" x="106.25" y="19.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="106.25" y="22.4136" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="106.25" y="22.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
 <attribute name="PACKAGE" value="0603" x="106.25" y="19.25" size="1.778" layer="27" display="off"/>
 <attribute name="PARAMETER" value="100mW" x="106.25" y="19.25" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUMBER" value="CRCW0603100KFKEA" x="106.25" y="19.25" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="106.25" y="17.8364" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R24" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="100k/1%" x="102.25" y="19.25" smashed="yes">
+<attribute name="MANUFACTURER" value="VISHAY" x="102.25" y="19.25" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="102.25" y="22.25" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="102.25" y="19.25" size="1.778" layer="27" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="102.25" y="19.25" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW0603100KFKEA" x="102.25" y="19.25" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="102.25" y="17.8364" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R26" library="Resistors" package="RESC1608X50N" package3d_urn="urn:adsk.eagle:package:24925614/1" value="10k/1%" x="71.5" y="3.5" smashed="yes">
+<attribute name="MANUFACTURER" value="VISHAY" x="71.5" y="3.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="71.5" y="1.6636" size="0.8" layer="25" ratio="12" align="bottom-center"/>
+<attribute name="PACKAGE" value="0603" x="71.5" y="3.5" size="1.778" layer="27" display="off"/>
+<attribute name="PARAMETER" value="100mW" x="71.5" y="3.5" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNUMBER" value="CRCW060310K0FKEA" x="71.5" y="3.5" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="71.5" y="2.0864" size="1.27" layer="27" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -1881,7 +1889,8 @@ design rules under a new name.</description>
 <wire x1="95.405" y1="5.5266" x2="98.0266" y2="5.5266" width="0.5" layer="1"/>
 <wire x1="100.5" y1="8" x2="100.5" y2="16.25" width="0.5" layer="1"/>
 <wire x1="100.5" y1="16.25" x2="100.5" y2="17.75" width="0.5" layer="1"/>
-<wire x1="100.5" y1="17.75" x2="100.5" y2="20.5" width="0.5" layer="1"/>
+<wire x1="100.5" y1="17.75" x2="100.5" y2="19.25" width="0.5" layer="1"/>
+<wire x1="100.5" y1="19.25" x2="100.5" y2="20.5" width="0.5" layer="1"/>
 <wire x1="98.0266" y1="5.5266" x2="100.5" y2="8" width="0.5" layer="1"/>
 <wire x1="35" y1="19.5" x2="32.3206" y2="16.8206" width="0.5" layer="1"/>
 <wire x1="38.75" y1="27.25" x2="38.75" y2="29" width="0.5" layer="1"/>
@@ -1947,10 +1956,14 @@ design rules under a new name.</description>
 <wire x1="95.595" y1="25.405" x2="95.595" y2="29.97" width="0.5" layer="16"/>
 <via x="95.595" y="29.97" extent="1-16" drill="0.6"/>
 <wire x1="100.5" y1="20.5" x2="95.595" y2="25.405" width="0.5" layer="16"/>
-<contactref element="R9" pad="1"/>
-<contactref element="R14" pad="1"/>
+<contactref element="R24" pad="1"/>
+<wire x1="101.425" y1="19.25" x2="100.5" y2="19.25" width="0.25" layer="1"/>
+<contactref element="R14" pad="2"/>
+<contactref element="R9" pad="2"/>
 <wire x1="101.425" y1="17.75" x2="100.5" y2="17.75" width="0.25" layer="1"/>
 <wire x1="101.425" y1="16.25" x2="100.5" y2="16.25" width="0.25" layer="1"/>
+<contactref element="R26" pad="2"/>
+<wire x1="72.325" y1="3.5" x2="73.4294" y2="3.5" width="0.25" layer="1"/>
 <wire x1="41.75" y1="19.575" x2="41.25" y2="15.2783" width="0" layer="19" extent="1-1"/>
 <wire x1="34.3217" y1="8.35" x2="32.3206" y2="12" width="0" layer="19" extent="1-1"/>
 <wire x1="45.6783" y1="10.35" x2="41.25" y2="15.2783" width="0" layer="19" extent="1-1"/>
@@ -2316,16 +2329,15 @@ design rules under a new name.</description>
 <vertex x="18.4" y="31"/>
 <vertex x="18.4" y="26.2"/>
 </polygon>
-<contactref element="C24" pad="2"/>
-<contactref element="C25" pad="2"/>
 <contactref element="J3" pad="3"/>
-<wire x1="109.8206" y1="16.25" x2="110" y2="16.25" width="0.25" layer="1"/>
-<wire x1="110" y1="16.25" x2="110.75" y2="17" width="0.25" layer="1"/>
-<via x="110.75" y="17" extent="1-16" drill="0.3"/>
-<wire x1="109.8206" y1="17.75" x2="110" y2="17.75" width="0.25" layer="1"/>
-<wire x1="110" y1="17.75" x2="110.75" y2="17" width="0.25" layer="1"/>
 <wire x1="111.025" y1="9.9" x2="109.5" y2="9.9" width="0.25" layer="1"/>
 <via x="109.5" y="9.9" extent="1-16" drill="0.3"/>
+<contactref element="C24" pad="1"/>
+<contactref element="C25" pad="1"/>
+<wire x1="111.0706" y1="17.75" x2="111.0706" y2="16.25" width="0.25" layer="1"/>
+<wire x1="111.0706" y1="16.25" x2="111.0706" y2="15.4294" width="0.25" layer="1"/>
+<wire x1="111.0706" y1="15.4294" x2="111.5" y2="15" width="0.25" layer="1"/>
+<via x="111.5" y="15" extent="1-16" drill="0.3"/>
 <wire x1="39" y1="18" x2="40.75" y2="15.2783" width="0" layer="19" extent="1-1"/>
 <wire x1="45.6783" y1="8.85" x2="45.6783" y2="6.85" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2569,8 +2581,8 @@ design rules under a new name.</description>
 <vertex x="16.5" y="7.5"/>
 <vertex x="12.5" y="11.5"/>
 <vertex x="12.5" y="14.5"/>
-<vertex x="16" y="14.5"/>
-<vertex x="20.25" y="10.25"/>
+<vertex x="17" y="14.5"/>
+<vertex x="20.25" y="11.25"/>
 <vertex x="20.25" y="4.5"/>
 </polygon>
 <wire x1="21.0706" y1="3.6794" x2="20" y2="4.75" width="0.5" layer="1"/>
@@ -2639,35 +2651,21 @@ design rules under a new name.</description>
 <wire x1="99.75" y1="16.25" x2="101.25" y2="14.75" width="0.25" layer="16"/>
 <wire x1="110.25" y1="14.75" x2="111.025" y2="13.975" width="0.25" layer="1"/>
 </signal>
-<signal name="MCU_QEA">
-<contactref element="IC14" pad="8"/>
-<wire x1="42.75" y1="10.25" x2="49.25" y2="16.75" width="0.25" layer="16"/>
-<wire x1="49.25" y1="16.75" x2="103.75" y2="16.75" width="0.25" layer="16"/>
-<via x="36.75" y="9.75" extent="1-16" drill="0.3"/>
-<wire x1="42.75" y1="10.25" x2="37.75" y2="10.25" width="0.25" layer="16"/>
-<wire x1="37.75" y1="10.25" x2="37.25" y2="9.75" width="0.25" layer="16"/>
-<wire x1="37.25" y1="9.75" x2="36.75" y2="9.75" width="0.25" layer="16"/>
-<wire x1="35.75" y1="9.75" x2="35.65" y2="9.85" width="0.25" layer="1"/>
-<wire x1="35.65" y1="9.85" x2="34.3217" y2="9.85" width="0.25" layer="1"/>
-<wire x1="36.75" y1="9.75" x2="35.75" y2="9.75" width="0.25" layer="1"/>
-<contactref element="R9" pad="2"/>
-<contactref element="R22" pad="1"/>
-<wire x1="103.75" y1="16.75" x2="104.25" y2="16.25" width="0.25" layer="16"/>
-<via x="104.25" y="16.25" extent="1-16" drill="0.3"/>
-<wire x1="103.075" y1="16.25" x2="104.25" y2="16.25" width="0.25" layer="1"/>
+<signal name="QEA_RAW">
 <contactref element="J3" pad="4"/>
-<wire x1="105.425" y1="16.25" x2="105.425" y2="15.575" width="0.25" layer="1"/>
-<wire x1="105.425" y1="15.575" x2="106.75" y2="14.25" width="0.25" layer="1"/>
-<wire x1="106.75" y1="14.25" x2="108.25" y2="14.25" width="0.25" layer="1"/>
-<wire x1="108.25" y1="14.25" x2="108.75" y2="13.75" width="0.25" layer="1"/>
 <wire x1="109.35" y1="8.9" x2="111.025" y2="8.9" width="0.25" layer="1"/>
-<wire x1="108.75" y1="13.75" x2="108.75" y2="9.5" width="0.25" layer="1"/>
+<wire x1="108.75" y1="9.5" x2="108.75" y2="13.75" width="0.25" layer="1"/>
 <wire x1="108.75" y1="9.5" x2="109.35" y2="8.9" width="0.25" layer="1"/>
-<wire x1="104.25" y1="16.25" x2="105.425" y2="16.25" width="0.25" layer="1"/>
+<contactref element="R22" pad="2"/>
+<contactref element="R9" pad="1"/>
+<wire x1="103.075" y1="16.25" x2="105.425" y2="16.25" width="0.25" layer="1"/>
+<wire x1="108.75" y1="13.75" x2="108" y2="14.5" width="0.25" layer="1"/>
+<wire x1="105.425" y1="15.575" x2="105.425" y2="16.25" width="0.25" layer="1"/>
+<wire x1="108" y1="14.5" x2="106.5" y2="14.5" width="0.25" layer="1"/>
+<wire x1="106.5" y1="14.5" x2="105.425" y2="15.575" width="0.25" layer="1"/>
 </signal>
 <signal name="MCU_LS">
 <contactref element="IC14" pad="6"/>
-<contactref element="R24" pad="1"/>
 <wire x1="34.3217" y1="10.85" x2="35.35" y2="10.85" width="0.25" layer="1"/>
 <wire x1="35.75" y1="11.25" x2="36.75" y2="11.25" width="0.25" layer="1"/>
 <via x="36.75" y="11.25" extent="1-16" drill="0.3"/>
@@ -2676,9 +2674,16 @@ design rules under a new name.</description>
 <wire x1="42.25" y1="11.25" x2="48.75" y2="17.75" width="0.25" layer="16"/>
 <wire x1="48.75" y1="17.75" x2="99.75" y2="17.75" width="0.25" layer="16"/>
 <wire x1="99.75" y1="17.75" x2="101.25" y2="19.25" width="0.25" layer="16"/>
-<wire x1="101.25" y1="19.25" x2="104.25" y2="19.25" width="0.25" layer="16"/>
-<via x="104.25" y="19.25" extent="1-16" drill="0.3"/>
-<wire x1="104.25" y1="19.25" x2="105.425" y2="19.25" width="0.25" layer="1"/>
+<wire x1="108.25" y1="19.25" x2="101.25" y2="19.25" width="0.25" layer="16"/>
+<via x="108.25" y="19.25" extent="1-16" drill="0.3"/>
+<contactref element="R25" pad="2"/>
+<contactref element="J3" pad="5"/>
+<wire x1="111.025" y1="7.9" x2="111.9" y2="7.9" width="0.25" layer="1"/>
+<wire x1="111.9" y1="7.9" x2="112.5" y2="8.5" width="0.25" layer="1"/>
+<wire x1="112.5" y1="8.5" x2="112.5" y2="18" width="0.25" layer="1"/>
+<wire x1="112.5" y1="18" x2="111.25" y2="19.25" width="0.25" layer="1"/>
+<wire x1="111.25" y1="19.25" x2="108.25" y2="19.25" width="0.25" layer="1"/>
+<wire x1="108.25" y1="19.25" x2="107.075" y2="19.25" width="0.25" layer="1"/>
 </signal>
 <signal name="VSUPP" class="1">
 <contactref element="J1" pad="1"/>
@@ -2692,11 +2697,11 @@ design rules under a new name.</description>
 <contactref element="IC6" pad="13"/>
 <contactref element="IC14" pad="1"/>
 <wire x1="34.3217" y1="13.35" x2="37.15" y2="13.35" width="0.25" layer="1"/>
-<via x="38.25" y="9" extent="1-16" drill="0.3"/>
-<wire x1="38.25" y1="9" x2="38.25" y2="5.5" width="0.25" layer="16"/>
+<via x="38.25" y="7.25" extent="1-16" drill="0.3"/>
+<wire x1="38.25" y1="7.25" x2="38.25" y2="5.5" width="0.25" layer="16"/>
 <wire x1="89.25" y1="1.25" x2="91.5" y2="3.5" width="0.25" layer="16"/>
 <wire x1="37.15" y1="13.35" x2="38.25" y2="12.25" width="0.25" layer="1"/>
-<wire x1="38.25" y1="12.25" x2="38.25" y2="9" width="0.25" layer="1"/>
+<wire x1="38.25" y1="12.25" x2="38.25" y2="7.25" width="0.25" layer="1"/>
 <wire x1="38.25" y1="5.5" x2="42.5" y2="1.25" width="0.25" layer="16"/>
 <via x="91.5" y="3.5" extent="1-16" drill="0.3"/>
 <wire x1="42.5" y1="1.25" x2="58.5" y2="1.25" width="0.25" layer="16"/>
@@ -2709,14 +2714,17 @@ design rules under a new name.</description>
 <wire x1="80.595" y1="3.595" x2="80.5" y2="3.5" width="0.25" layer="1"/>
 <via x="80.5" y="3.5" extent="1-16" drill="0.3"/>
 <wire x1="80.5" y1="3.5" x2="80.5" y2="1.25" width="0.25" layer="16"/>
-<wire x1="69.595" y1="5.5266" x2="69.595" y2="3.595" width="0.25" layer="1"/>
-<wire x1="69.595" y1="3.595" x2="69.5" y2="3.5" width="0.25" layer="1"/>
+<wire x1="69.595" y1="5.5266" x2="69.595" y2="4.095" width="0.25" layer="1"/>
+<wire x1="69.595" y1="4.095" x2="69.5" y2="4" width="0.25" layer="1"/>
+<wire x1="69.5" y1="4" x2="69.5" y2="3.5" width="0.25" layer="1"/>
 <via x="69.5" y="3.5" extent="1-16" drill="0.3"/>
 <wire x1="69.5" y1="3.5" x2="69.5" y2="1.25" width="0.25" layer="16"/>
 <wire x1="58.595" y1="5.5266" x2="58.595" y2="3.595" width="0.25" layer="1"/>
 <wire x1="58.595" y1="3.595" x2="58.5" y2="3.5" width="0.25" layer="1"/>
 <via x="58.5" y="3.5" extent="1-16" drill="0.3"/>
 <wire x1="58.5" y1="3.5" x2="58.5" y2="1.25" width="0.25" layer="16"/>
+<contactref element="R26" pad="1"/>
+<wire x1="70.675" y1="3.5" x2="69.5" y2="3.5" width="0.25" layer="1"/>
 </signal>
 <signal name="N$56">
 <contactref element="IC13" pad="1"/>
@@ -3422,56 +3430,59 @@ design rules under a new name.</description>
 <via x="118" y="4.1794" extent="1-16" drill="0.3"/>
 <wire x1="118" y1="4.1794" x2="103.8206" y2="4.1794" width="0.25" layer="16"/>
 </signal>
-<signal name="MCU_QEB">
-<contactref element="R14" pad="2"/>
-<contactref element="R23" pad="1"/>
-<contactref element="IC14" pad="7"/>
-<wire x1="34.3217" y1="10.35" x2="35.6" y2="10.35" width="0.25" layer="1"/>
-<wire x1="37.261396875" y1="10.511396875" x2="37.5" y2="10.75" width="0.25" layer="16"/>
-<wire x1="37.5" y1="10.75" x2="42.5" y2="10.75" width="0.25" layer="16"/>
-<wire x1="42.5" y1="10.75" x2="49" y2="17.25" width="0.25" layer="16"/>
-<wire x1="49" y1="17.25" x2="103.75" y2="17.25" width="0.25" layer="16"/>
-<wire x1="35.6" y1="10.35" x2="35.75" y2="10.5" width="0.25" layer="1"/>
-<via x="36.25" y="10.5" extent="1-16" drill="0.3"/>
-<wire x1="36.25" y1="10.5" x2="36.261396875" y2="10.511396875" width="0.25" layer="16"/>
-<wire x1="36.261396875" y1="10.511396875" x2="37.261396875" y2="10.511396875" width="0.25" layer="16"/>
-<wire x1="35.75" y1="10.5" x2="36.25" y2="10.5" width="0.25" layer="1"/>
-<wire x1="103.75" y1="17.25" x2="104.25" y2="17.75" width="0.25" layer="16"/>
-<via x="104.25" y="17.75" extent="1-16" drill="0.3"/>
-<wire x1="103.075" y1="17.75" x2="104.25" y2="17.75" width="0.25" layer="1"/>
+<signal name="QEB_RAW">
 <contactref element="J3" pad="2"/>
-<wire x1="105.425" y1="17.75" x2="106.25" y2="16.925" width="0.25" layer="1"/>
-<wire x1="106.25" y1="15.5" x2="107" y2="14.75" width="0.25" layer="1"/>
-<wire x1="108.5" y1="14.75" x2="109.25" y2="14" width="0.25" layer="1"/>
+<wire x1="109.25" y1="14" x2="108.25" y2="15" width="0.25" layer="1"/>
 <wire x1="109.85" y1="10.9" x2="111.025" y2="10.9" width="0.25" layer="1"/>
-<wire x1="106.25" y1="16.925" x2="106.25" y2="15.5" width="0.25" layer="1"/>
-<wire x1="107" y1="14.75" x2="108.5" y2="14.75" width="0.25" layer="1"/>
 <wire x1="109.25" y1="14" x2="109.25" y2="11.5" width="0.25" layer="1"/>
 <wire x1="109.25" y1="11.5" x2="109.85" y2="10.9" width="0.25" layer="1"/>
-<wire x1="104.25" y1="17.75" x2="105.425" y2="17.75" width="0.25" layer="1"/>
-</signal>
-<signal name="N$72">
-<contactref element="R22" pad="2"/>
-<contactref element="C24" pad="1"/>
-<wire x1="107.075" y1="16.25" x2="108.1794" y2="16.25" width="0.25" layer="1"/>
-</signal>
-<signal name="N$77">
 <contactref element="R23" pad="2"/>
-<contactref element="C25" pad="1"/>
-<wire x1="107.075" y1="17.75" x2="108.1794" y2="17.75" width="0.25" layer="1"/>
-</signal>
-<signal name="N$70">
-<contactref element="R24" pad="2"/>
-<contactref element="R25" pad="1"/>
-<wire x1="107.075" y1="19.25" x2="108.175" y2="19.25" width="0.25" layer="1"/>
+<contactref element="R14" pad="1"/>
+<wire x1="103.075" y1="17.75" x2="105.425" y2="17.75" width="0.25" layer="1"/>
+<wire x1="108.25" y1="15" x2="106.75" y2="15" width="0.25" layer="1"/>
+<wire x1="106.75" y1="15" x2="106.25" y2="15.5" width="0.25" layer="1"/>
+<wire x1="106.25" y1="16.925" x2="105.425" y2="17.75" width="0.25" layer="1"/>
+<wire x1="106.25" y1="15.5" x2="106.25" y2="16.925" width="0.25" layer="1"/>
 </signal>
 <signal name="N$71">
-<contactref element="R25" pad="2"/>
-<contactref element="J3" pad="5"/>
-<wire x1="109.825" y1="19.25" x2="112.5" y2="16.575" width="0.25" layer="1"/>
-<wire x1="112.5" y1="16.575" x2="112.5" y2="8.5" width="0.25" layer="1"/>
-<wire x1="112.5" y1="8.5" x2="111.9" y2="7.9" width="0.25" layer="1"/>
-<wire x1="111.9" y1="7.9" x2="111.025" y2="7.9" width="0.25" layer="1"/>
+<contactref element="R25" pad="1"/>
+<contactref element="R24" pad="2"/>
+<wire x1="103.075" y1="19.25" x2="105.425" y2="19.25" width="0.25" layer="1"/>
+</signal>
+<signal name="MCU_QEA">
+<contactref element="C24" pad="2"/>
+<contactref element="R22" pad="1"/>
+<contactref element="IC14" pad="8"/>
+<wire x1="36" y1="9.75" x2="36.75" y2="9.75" width="0.25" layer="1"/>
+<wire x1="36" y1="9.75" x2="35.9" y2="9.85" width="0.25" layer="1"/>
+<via x="36.75" y="9.75" extent="1-16" drill="0.3"/>
+<wire x1="36.75" y1="9.75" x2="37.25" y2="9.75" width="0.25" layer="16"/>
+<wire x1="34.3217" y1="9.85" x2="35.9" y2="9.85" width="0.25" layer="1"/>
+<wire x1="107.75" y1="16.75" x2="108.25" y2="16.25" width="0.25" layer="16"/>
+<via x="108.25" y="16.25" extent="1-16" drill="0.3"/>
+<wire x1="108.25" y1="16.25" x2="107.075" y2="16.25" width="0.25" layer="1"/>
+<wire x1="37.25" y1="9.75" x2="37.75" y2="10.25" width="0.25" layer="16"/>
+<wire x1="37.75" y1="10.25" x2="42.75" y2="10.25" width="0.25" layer="16"/>
+<wire x1="42.75" y1="10.25" x2="49.25" y2="16.75" width="0.25" layer="16"/>
+<wire x1="49.25" y1="16.75" x2="107.75" y2="16.75" width="0.25" layer="16"/>
+<wire x1="108.25" y1="16.25" x2="109.4294" y2="16.25" width="0.25" layer="1"/>
+</signal>
+<signal name="MCU_QEB">
+<contactref element="C25" pad="2"/>
+<contactref element="R23" pad="1"/>
+<contactref element="IC14" pad="7"/>
+<wire x1="34.3217" y1="10.35" x2="36.1" y2="10.35" width="0.25" layer="1"/>
+<wire x1="36.1" y1="10.35" x2="36.25" y2="10.5" width="0.25" layer="1"/>
+<via x="36.25" y="10.5" extent="1-16" drill="0.3"/>
+<wire x1="107.75" y1="17.25" x2="108.25" y2="17.75" width="0.25" layer="16"/>
+<via x="108.25" y="17.75" extent="1-16" drill="0.3"/>
+<wire x1="108.25" y1="17.75" x2="107.075" y2="17.75" width="0.25" layer="1"/>
+<wire x1="107.75" y1="17.25" x2="49" y2="17.25" width="0.25" layer="16"/>
+<wire x1="36.25" y1="10.5" x2="37" y2="10.5" width="0.25" layer="16"/>
+<wire x1="37.25" y1="10.75" x2="37" y2="10.5" width="0.25" layer="16"/>
+<wire x1="49" y1="17.25" x2="42.5" y2="10.75" width="0.25" layer="16"/>
+<wire x1="42.5" y1="10.75" x2="37.25" y2="10.75" width="0.25" layer="16"/>
+<wire x1="108.25" y1="17.75" x2="109.4294" y2="17.75" width="0.25" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
